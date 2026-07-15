@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stackly Transportation & Logistics - Comprehensive freight, warehousing, supply chain, and logistics solutions for businesses worldwide.">
+    <meta name="keywords" content="logistics, transportation, freight, shipping, warehousing, supply chain, customs clearance">
+    <meta name="author" content="Stackly Transportation & Logistics">
+    <title>Our Services | Stackly Transportation & Logistics</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/alignments.css">
+</head>
+<body>
+
+    <!-- PAGE LOADER -->
+    <div id="page-loader" class="page-loader">
+      <div class="loader-content">
+        <div class="loader-truck"><i class="fas fa-truck"></i></div>
+        <div class="loader-bar"><span></span></div>
+        <p class="loader-text">Loading...</p>
+      </div>
+    </div>
+
+    <!-- BACK TO TOP -->
+    <a href="#home" id="back-to-top" class="back-to-top" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- FLOATING CONTACT BUTTONS -->
+    <div class="floating-contact">
+      <a href="404.html" class="floating-btn whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="tel:+1234567890" class="floating-btn call-btn" aria-label="Call us">
+        <i class="fas fa-phone"></i>
+      </a>
+      <a href="mailto:info@stackly.com" class="floating-btn email-btn" aria-label="Email us">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+
+    <!-- HEADER TOP BAR -->
+    <div class="top-bar" id="home">
+      <div class="container">
+        <div class="top-bar-inner">
+          <div class="top-bar-left">
+            <a href="tel:+1234567890" class="top-bar-item"><i class="fas fa-phone-alt"></i> +1 234 567 890</a>
+            <a href="mailto:info@stackly.com" class="top-bar-item"><i class="fas fa-envelope"></i> info@stackly.com</a>
+            <span class="top-bar-item"><i class="fas fa-clock"></i> Mon &ndash; Sat: 8:00 AM &ndash; 7:00 PM</span>
+          </div>
+          <div class="top-bar-right">
+            <div class="top-bar-socials">
+              <a href="404.html" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="404.html" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+              <a href="404.html" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="404.html" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            <button id="dark-mode-toggle-top" class="dark-mode-toggle" aria-label="Toggle dark mode">
+              <i class="fas fa-moon"></i><i class="fas fa-sun"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN HEADER / NAVIGATION -->
+    <header class="main-header" id="main-header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="logo">
+            <img src="images/logo.webp" alt="Stackly Logo" class="logo-img">
+          </a>
+          <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+          </button>
+          <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item has-dropdown">
+              <a href="#" class="nav-link">About <i class="fas fa-chevron-down"></i></a>
+              <ul class="dropdown">
+                <li><a href="about.html" class="dropdown-link">About Us</a></li>
+                <li><a href="team.html" class="dropdown-link">Our Team</a></li>                <li><a href="faq.html" class="dropdown-link">FAQ</a></li>
+              </ul>
+            </li>
+            <li class="nav-item has-dropdown active">
+              <a href="#" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+              <ul class="dropdown">
+                <li><a href="road-freight.html" class="dropdown-link">Road Freight</a></li>
+                <li><a href="air-freight.html" class="dropdown-link">Air Freight</a></li>
+                <li><a href="warehousing.html" class="dropdown-link">Warehousing</a></li>              </ul>
+            </li>
+            <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+            <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+            <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="login.html" class="nav-link">Sign In</a></li>
+            <li class="nav-item"><a href="register.html" class="btn btn-primary nav-cta">Sign Up</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <a href="index.html" class="logo">
+                <img src="images/logo.webp" alt="Stackly Logo" class="logo-img">
+            </a>
+            <button class="mobile-menu-close" id="mobileMenuClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="mobile-nav-list">
+            <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link">Home</a></li>
+            <li class="mobile-nav-item has-dropdown">
+                <a href="about.html" class="mobile-nav-link">About <i class="fas fa-chevron-down"></i></a>
+                <ul class="mobile-dropdown">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="about.html#team">Our Team</a></li>
+                    <li><a href="about.html#history">Company History</a></li>
+                    <li><a href="about.html#careers">Careers</a></li>
+                </ul>
+            </li>
+            <li class="mobile-nav-item"><a href="services.html" class="mobile-nav-link active">Services</a></li>
+            <li class="mobile-nav-item"><a href="portfolio.html" class="mobile-nav-link">Portfolio</a></li>
+            <li class="mobile-nav-item"><a href="pricing.html" class="mobile-nav-link">Pricing</a></li>
+            <li class="mobile-nav-item"><a href="blog.html" class="mobile-nav-link">Blog</a></li>
+            <li class="mobile-nav-item"><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb-section bg-hero-services">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li><span class="separator"><i class="fas fa-chevron-right"></i></span></li>
+                    <li class="active">Services</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Services Intro -->
+    <section class="services-intro" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">What We Offer</span>
+                <h1 class="section-title">Our Logistics Services</h1>
+                <p class="section-subtitle">
+                    We deliver comprehensive logistics solutions tailored to meet the unique demands of modern businesses. 
+                    From freight transportation to supply chain optimization, our integrated services ensure your cargo 
+                    reaches its destination safely, on time, and cost-effectively.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Categories Grid -->
+    <section class="services-grid-section" data-aos="fade-up" data-aos-delay="100">
+        <div class="container">
+            <div class="services-grid">
+
+                <!-- Road Freight -->
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="service-card-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3 class="service-card-title">Road Freight</h3>
+                    <p class="service-card-desc">
+                        Reliable and flexible road transportation services covering domestic and cross-border routes. 
+                        Our fleet of modern trucks ensures timely delivery of goods across all major highways and remote locations.
+                    </p>
+                    <a href="#road-freight" class="service-card-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Ocean Freight -->
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="service-card-icon">
+                        <i class="fas fa-ship"></i>
+                    </div>
+                    <h3 class="service-card-title">Ocean Freight</h3>
+                    <p class="service-card-desc">
+                        Cost-effective sea shipping solutions for bulk cargo and containerized goods across international waters. 
+                        We partner with major shipping lines to offer FCL and LCL services to ports worldwide.
+                    </p>
+                    <a href="#ocean-freight" class="service-card-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Air Freight -->
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="service-card-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3 class="service-card-title">Air Freight</h3>
+                    <p class="service-card-desc">
+                        Fast and secure air cargo services for time-sensitive and high-value shipments. 
+                        Our partnerships with leading airlines guarantee priority handling and expedited customs clearance.
+                    </p>
+                    <a href="#air-freight" class="service-card-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Rail Freight -->
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="250">
+                    <div class="service-card-icon">
+                        <i class="fas fa-train"></i>
+                    </div>
+                    <h3 class="service-card-title">Rail Freight</h3>
+                    <p class="service-card-desc">
+                        Efficient and eco-friendly rail transportation for heavy and oversized cargo across continental networks. 
+                        Our rail solutions offer a sustainable alternative with competitive transit times and costs.
+                    </p>
+                    <a href="#rail-freight" class="service-card-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Warehousing -->
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="service-card-icon">
+                        <i class="fas fa-warehouse"></i>
+                    </div>
+                    <h3 class="service-card-title">Warehousing</h3>
+                    <p class="service-card-desc">
+                        State-of-the-art storage facilities with climate control, 24/7 surveillance, and advanced inventory systems. 
+                        Our strategically located warehouses provide flexible space solutions for short and long-term storage needs.
+                    </p>
+                    <a href="#warehousing" class="service-card-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Inventory Management -->
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="service-card-icon">
+                        <i class="fas fa-boxes-stacked"></i>
+                    </div>
+                    <h3 class="service-card-title">Inventory Management</h3>
+                    <p class="service-card-desc">
+                        Real-time inventory tracking and management using cutting-edge WMS technology. 
+                        We help you maintain optimal stock levels, reduce carrying costs, and improve order fulfillment accuracy.
+                    </p>
+                    <a href="#inventory-management" class="service-card-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Packaging -->
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="service-card-icon">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <h3 class="service-card-title">Packaging</h3>
+                    <p class="service-card-desc">
+                        Professional packaging solutions designed to protect your goods during transit and handling. 
+                        From custom crating to eco-friendly materials, we ensure your products arrive in perfect condition.
+                    </p>
+                    <a href="#packaging" class="service-card-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Distribution -->
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="250">
+                    <div class="service-card-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3 class="service-card-title">Distribution</h3>
+                    <p class="service-card-desc">
+                        End-to-end distribution services that get your products to retailers, distributors, and end customers efficiently. 
+                        Our optimized routing and last-mile delivery solutions reduce costs and improve delivery times.
+                    </p>
+                    <a href="#distribution" class="service-card-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Cargo Insurance -->
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="service-card-icon">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <h3 class="service-card-title">Cargo Insurance</h3>
+                    <p class="service-card-desc">
+                        Comprehensive cargo insurance coverage to protect your shipments against loss, damage, and unforeseen risks. 
+                        We offer tailored insurance packages that provide peace of mind throughout the supply chain.
+                    </p>
+                    <a href="#cargo-insurance" class="service-card-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Supply Chain Management -->
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="service-card-icon">
+                        <i class="fas fa-diagram-project"></i>
+                    </div>
+                    <h3 class="service-card-title">Supply Chain</h3>
+                    <p class="service-card-desc">
+                        Strategic supply chain consulting and management to streamline your operations and reduce costs. 
+                        Our experts analyze your processes and implement data-driven solutions for maximum efficiency.
+                    </p>
+                    <a href="contact.html" class="service-card-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Freight Forwarding -->
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="service-card-icon">
+                        <i class="fas fa-file-invoice"></i>
+                    </div>
+                    <h3 class="service-card-title">Freight Forwarding</h3>
+                    <p class="service-card-desc">
+                        Expert freight forwarding services handling documentation, booking, and coordination across all transport modes. 
+                        Our global network ensures seamless door-to-door shipping with competitive rates.
+                    </p>
+                    <a href="contact.html" class="service-card-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Customs Clearance -->
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="250">
+                    <div class="service-card-icon">
+                        <i class="fas fa-stamp"></i>
+                    </div>
+                    <h3 class="service-card-title">Customs Clearance</h3>
+                    <p class="service-card-desc">
+                        Hassle-free customs clearance services with our licensed customs brokers who navigate complex regulations. 
+                        We handle classification, documentation, and compliance to expedite your shipments through customs.
+                    </p>
+                    <a href="contact.html" class="service-card-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Service Detail: Road Freight -->
+    <section class="featured-service" id="road-freight">
+        <div class="container">
+            <div class="featured-service-content">
+                <div class="featured-service-image" data-aos="fade-right">
+                    <div class="image-placeholder">
+                        <i class="fas fa-truck-moving"></i>
+                        <span>Road Freight Services</span>
+                    </div>
+                </div>
+                <div class="featured-service-info" data-aos="fade-left">
+                    <span class="section-tag">Featured Service</span>
+                    <h2 class="section-title">Road Freight Solutions</h2>
+                    <p class="featured-service-desc">
+                        Our road freight division operates a modern fleet of over 500 vehicles, ranging from light delivery vans to 
+                        heavy-duty articulated trucks. We specialize in full truckload (FTL) and less-than-truckload (LTL) shipments, 
+                        offering flexible solutions for businesses of all sizes. With real-time GPS tracking and dedicated account 
+                        managers, we ensure complete visibility and control over your shipments from pickup to delivery.
+                    </p>
+
+                    <div class="featured-service-features">
+                        <h4>Key Features</h4>
+                        <ul class="features-list">
+                            <li><i class="fas fa-check-circle"></i> FTL and LTL options for flexible shipping</li>
+                            <li><i class="fas fa-check-circle"></i> Real-time GPS tracking and delivery updates</li>
+                            <li><i class="fas fa-check-circle"></i> Temperature-controlled vehicles for sensitive cargo</li>
+                            <li><i class="fas fa-check-circle"></i> Cross-border and international road transport</li>
+                            <li><i class="fas fa-check-circle"></i> Dedicated fleet for contract logistics</li>
+                            <li><i class="fas fa-check-circle"></i> Express and same-day delivery options</li>
+                        </ul>
+                    </div>
+
+                    <div class="featured-service-benefits">
+                        <h4>Benefits</h4>
+                        <div class="benefits-grid">
+                            <div class="benefit-item">
+                                <i class="fas fa-clock"></i>
+                                <span>On-Time Delivery</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-dollar-sign"></i>
+                                <span>Competitive Rates</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-shield-halved"></i>
+                                <span>Cargo Safety</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-headset"></i>
+                                <span>24/7 Support</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="contact.html#quote" class="btn btn-primary">Request a Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section" id="process">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-tag">How We Work</span>
+                <h2 class="section-title">Our Logistics Process</h2>
+                <p class="section-subtitle">
+                    A streamlined six-step process that ensures every shipment is handled with precision, efficiency, and care from start to finish.
+                </p>
+            </div>
+
+            <div class="process-timeline">
+                <!-- Step 1 -->
+                <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="process-step-number">01</div>
+                    <div class="process-step-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 class="process-step-title">Consultation</h3>
+                    <p class="process-step-desc">
+                        We begin with a thorough consultation to understand your logistics requirements, cargo specifications, 
+                        delivery timelines, and budget constraints.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="process-step" data-aos="fade-up" data-aos-delay="150">
+                    <div class="process-step-number">02</div>
+                    <div class="process-step-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3 class="process-step-title">Planning</h3>
+                    <p class="process-step-desc">
+                        Our team designs a customized logistics plan with optimal routing, carrier selection, 
+                        and cost analysis to meet your specific needs.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="process-step-number">03</div>
+                    <div class="process-step-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="process-step-title">Execution</h3>
+                    <p class="process-step-desc">
+                        We execute the logistics plan with precision, coordinating pickup, handling, documentation, 
+                        and transportation across all chosen modes.
+                    </p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="process-step" data-aos="fade-up" data-aos-delay="250">
+                    <div class="process-step-number">04</div>
+                    <div class="process-step-icon">
+                        <i class="fas fa-satellite-dish"></i>
+                    </div>
+                    <h3 class="process-step-title">Monitoring</h3>
+                    <p class="process-step-desc">
+                        Real-time tracking and monitoring of your shipments with proactive alerts and updates 
+                        at every milestone throughout the journey.
+                    </p>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="process-step-number">05</div>
+                    <div class="process-step-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="process-step-title">Support</h3>
+                    <p class="process-step-desc">
+                        Dedicated customer support available 24/7 to address any concerns, provide updates, 
+                        and resolve issues promptly as they arise.
+                    </p>
+                </div>
+
+                <!-- Step 6 -->
+                <div class="process-step" data-aos="fade-up" data-aos-delay="350">
+                    <div class="process-step-number">06</div>
+                    <div class="process-step-icon">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <h3 class="process-step-title">Delivery</h3>
+                    <p class="process-step-desc">
+                        Final delivery and confirmation with proof of delivery, followed by a comprehensive 
+                        report and feedback review for continuous improvement.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Our Services -->
+    <section class="why-choose-section" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Our Advantage</span>
+                <h2 class="section-title">Why Choose Our Services</h2>
+                <p class="section-subtitle">
+                    We combine industry expertise with cutting-edge technology to deliver logistics solutions that 
+                    give your business a competitive edge.
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3 class="feature-card-title">Global Network</h3>
+                    <p class="feature-card-desc">
+                        With partnerships spanning 150+ countries and a network of trusted agents worldwide, 
+                        we deliver seamless logistics solutions wherever your business takes you.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3 class="feature-card-title">Technology-Driven</h3>
+                    <p class="feature-card-desc">
+                        Our advanced TMS and WMS platforms provide real-time visibility, automated workflows, 
+                        and data analytics to optimize your supply chain operations.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="feature-card-title">Customer-Centric</h3>
+                    <p class="feature-card-desc">
+                        Every client receives a dedicated account manager and personalized service. 
+                        We build long-term partnerships based on trust, transparency, and exceptional results.
+                    </p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card" data-aos="zoom-in" data-aos-delay="250">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="feature-card-title">Sustainable Solutions</h3>
+                    <p class="feature-card-desc">
+                        We are committed to reducing our carbon footprint through green logistics practices, 
+                        including optimized routing, eco-friendly packaging, and carbon offset programs.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" data-aos="fade-up">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Client Testimonials</span>
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-subtitle">
+                    Hear from businesses that trust Stackly for their logistics and transportation needs.
+                </p>
+            </div>
+
+            <div class="testimonials-slider">
+                <div class="testimonials-track">
+
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Stackly's road freight service has transformed our distribution network. Their reliable fleet and 
+                            real-time tracking have reduced our delivery delays by 40%. The dedicated account manager truly 
+                            understands our business needs."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="testimonial-info">
+                                <h4 class="testimonial-name">Michael Rodriguez</h4>
+                                <span class="testimonial-role">Supply Chain Director, TechParts Inc.</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-service-tag">
+                            <i class="fas fa-truck"></i> Road Freight
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Switching to Stackly for our ocean freight needs was the best decision we made. They handled our 
+                            complex international shipment with ease, from customs clearance to final delivery. Their expertise 
+                            in supply chain management is unmatched."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="testimonial-info">
+                                <h4 class="testimonial-name">Sarah Chen</h4>
+                                <span class="testimonial-role">Operations Manager, GlobalTrade Co.</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-service-tag">
+                            <i class="fas fa-ship"></i> Ocean Freight
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Stackly's warehousing and inventory management solutions have streamlined our entire fulfillment 
+                            process. Their modern facilities and WMS integration reduced our order processing time by 50% 
+                            and errors are virtually nonexistent now."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="testimonial-info">
+                                <h4 class="testimonial-name">James Mitchell</h4>
+                                <span class="testimonial-role">CEO, RetailMax Solutions</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-service-tag">
+                            <i class="fas fa-warehouse"></i> Warehousing
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" data-aos="fade-up">
+        <div class="cta-overlay"></div>
+        <div class="container">
+            <div class="cta-content text-center">
+                <span class="cta-tag">Ready to Get Started?</span>
+                <h2 class="cta-title">Need a Custom Logistics Solution?</h2>
+                <p class="cta-text">
+                    Let our logistics experts design a tailored solution that fits your business requirements. 
+                    Contact us today for a free consultation and quote.
+                </p>
+                <div class="cta-buttons">
+                    <a href="contact.html#quote" class="btn btn-primary btn-lg">
+                        <i class="fas fa-paper-plane"></i> Get Free Quote
+                    </a>
+                    <a href="tel:+1234567890" class="btn btn-outline btn-lg">
+                        <i class="fas fa-phone-alt"></i> Call Us Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section" data-aos="fade-up">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-info">
+                    <h3 class="newsletter-title">Subscribe to Our Newsletter</h3>
+                    <p class="newsletter-desc">
+                        Stay updated with the latest logistics trends, industry news, and exclusive offers from Stackly.
+                    </p>
+                </div>
+                <form class="newsletter-form" action="#" method="post">
+                    <div class="newsletter-input-group">
+                        <input type="email" placeholder="Enter your email address" class="newsletter-input" required>
+                        <button type="submit" class="btn btn-primary newsletter-btn">Subscribe</button>
+                    </div>
+                    <p class="newsletter-disclaimer">
+                        By subscribing, you agree to our <a href="#">Privacy Policy</a>. Unsubscribe anytime.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+<!-- FOOTER -->
+<footer class="footer-section" id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col footer-brand">
+        <a href="index.html" class="footer-logo">
+          <img src="images/logo.webp" alt="Stackly Logo" class="logo-img">
+        </a>
+        <p class="footer-desc">Stackly Logistics is a premier transportation and logistics company delivering excellence across the globe. With 15+ years of experience and a modern fleet, we are your trusted supply chain partner.</p>
+        <div class="footer-socials">
+          <a href="404.html" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="404.html" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="404.html" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="404.html" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="404.html" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Our Services</h4>
+        <ul class="footer-links">
+          <li><a href="road-freight.html">Road Freight</a></li>
+          <li><a href="air-freight.html">Air Freight</a></li>
+          <li><a href="warehousing.html">Warehousing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Support</h4>
+        <ul class="footer-links">
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact Support</a></li>
+          <li><a href="404.html">Terms of Service</a></li>
+          <li><a href="404.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Contact Info</h4>
+        <ul class="footer-contact">
+          <li><i class="fas fa-map-marker-alt"></i> 123 Logistics Ave, Suite 100, New York, NY 10001</li>
+          <li><i class="fas fa-phone-alt"></i> <a href="tel:+1234567890">+1 234 567 890</a></li>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:info@stackly.com">info@stackly.com</a></li>
+          <li><i class="fas fa-clock"></i> Mon &ndash; Sat: 8:00 AM &ndash; 7:00 PM</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom-inner">
+        <p class="footer-copyright">&copy; 2025 Stackly Logistics. All Rights Reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="404.html">Privacy Policy</a>
+          <a href="404.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,
+        mirror: false,
+        offset: 100
+      });
+
+      const loader = document.getElementById('page-loader');
+      if (loader) {
+        window.addEventListener('load', function() {
+          loader.classList.add('loaded');
+          setTimeout(function() {
+            loader.style.display = 'none';
+          }, 500);
+        });
+        setTimeout(function() {
+          if (loader && !loader.classList.contains('loaded')) {
+            loader.classList.add('loaded');
+            setTimeout(function() {
+              loader.style.display = 'none';
+            }, 500);
+          }
+        }, 3000);
+      }
+
+      const backToTop = document.getElementById('back-to-top');
+      if (backToTop) {
+        window.addEventListener('scroll', function() {
+          if (window.scrollY > 500) {
+            backToTop.classList.add('visible');
+          } else {
+            backToTop.classList.remove('visible');
+          }
+        });
+      }
+
+      const header = document.getElementById('main-header');
+      if (header) {
+        window.addEventListener('scroll', function() {
+          if (window.scrollY > 100) {
+            header.classList.add('sticky');
+          } else {
+            header.classList.remove('sticky');
+          }
+        });
+      }
+
+      const hamburger = document.getElementById('hamburger');
+      const navMenu = document.getElementById('nav-menu');
+      if (hamburger && navMenu) {
+        hamburger.addEventListener('click', function() {
+          hamburger.classList.toggle('active');
+          navMenu.classList.toggle('active');
+        });
+      }
+
+      const faqItems = document.querySelectorAll('.faq-item');
+      faqItems.forEach(function(item) {
+        const question = item.querySelector('.faq-question');
+        if (question) {
+          question.addEventListener('click', function() {
+            const isActive = item.classList.contains('active');
+            faqItems.forEach(function(i) { i.classList.remove('active'); });
+            if (!isActive) {
+              item.classList.add('active');
+            }
+          });
+        }
+      });
+
+      const dropdowns = document.querySelectorAll('.has-dropdown, .has-mega-menu');
+      dropdowns.forEach(function(item) {
+        item.addEventListener('mouseenter', function() {
+          if (window.innerWidth > 992) {
+            this.classList.add('hovered');
+          }
+        });
+        item.addEventListener('mouseleave', function() {
+          if (window.innerWidth > 992) {
+            this.classList.remove('hovered');
+          }
+        });
+      });
+
+      document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+        anchor.addEventListener('click', function(e) {
+          const href = this.getAttribute('href');
+          if (href !== '#') {
+            const target = document.querySelector(href);
+            if (target) {
+              e.preventDefault();
+              target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          }
+        });
+      });
+    });
+  </script>
+  <script src="js/main.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/counter.js"></script>
+<script src="js/dark-mode.js"></script>
+</body>
+</html>

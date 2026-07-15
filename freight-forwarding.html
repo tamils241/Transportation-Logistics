@@ -1,0 +1,2872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stackly Transportation & Logistics - Global Freight Forwarding & Supply Chain Solutions. Sea freight, air freight, customs brokerage, and cargo insurance across 190+ countries.">
+    <meta name="keywords" content="freight forwarding, supply chain, sea freight, air freight, customs brokerage, cargo insurance, logistics solutions, global shipping">
+    <meta name="author" content="Stackly Transportation & Logistics">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Stackly Freight Forwarding - Global Supply Chain Solutions">
+    <meta property="og:description" content="End-to-end freight forwarding services with customs clearance, documentation, and cargo insurance across 190+ countries.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.stacklylogistics.com/freight-forwarding">
+    <title>Freight Forwarding | Stackly Transportation & Logistics</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+  <link rel="stylesheet" href="css/alignments.css">
+
+    <style>
+        :root {
+            --primary: #F59E0B;
+            --secondary: #0F172A;
+            --background: #F8F9FA;
+            --white: #ffffff;
+            --text-dark: #1a1a2e;
+            --text-light: #6c757d;
+            --gradient-primary: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+            --gradient-secondary: linear-gradient(135deg, #0F172A 0%, #334155 100%);
+            --gradient-hero: linear-gradient(135deg, rgba(44,62,80,0.92) 0%, rgba(52,73,94,0.88) 100%);
+            --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+            --shadow-md: 0 4px 20px rgba(0,0,0,0.12);
+            --shadow-lg: 0 8px 40px rgba(0,0,0,0.16);
+            --shadow-xl: 0 12px 60px rgba(0,0,0,0.2);
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 16px;
+            --radius-xl: 24px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--background);
+            color: var(--text-dark);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+        ul { list-style: none; }
+        img { max-width: 100%; height: auto; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--gradient-primary);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.3rem;
+        }
+        .logo-text h1 {
+            font-size: 1.3rem;
+            color: var(--secondary);
+            letter-spacing: -0.5px;
+        }
+        .logo-text span {
+            font-size: 0.7rem;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 500;
+        }
+        .nav-menu a {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 0.95rem;
+            color: var(--secondary);
+            position: relative;
+            padding: 5px 0;
+        }
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: var(--transition);
+        }
+        .nav-menu a:hover::after,
+        .nav-menu a.active::after { width: 100%; }
+        .nav-menu a:hover { color: var(--primary); }
+        .header-cta {
+            background: var(--gradient-primary);
+            color: var(--white);
+            padding: 10px 24px;
+            border-radius: 30px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(245, 158, 11,0.35);
+        }
+        .header-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(245, 158, 11,0.5);
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: var(--gradient-hero);
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23F39C12" fill-opacity="0.06" d="M0,160L48,170.7C96,181,192,203,288,192C384,181,480,139,576,138.7C672,139,768,181,864,197.3C960,213,1056,203,1152,186.7C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"/></svg>') no-repeat bottom center;
+            background-size: cover;
+        }
+        .hero-grid-overlay {
+            position: absolute;
+            inset: 0;
+            background-image: 
+                linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+        }
+        .hero-shapes {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            overflow: hidden;
+        }
+        .hero-shape {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.08;
+        }
+        .hero-shape-1 {
+            width: 500px; height: 500px;
+            background: var(--primary);
+            top: -150px; right: -100px;
+        }
+        .hero-shape-2 {
+            width: 300px; height: 300px;
+            background: var(--white);
+            bottom: -50px; left: -80px;
+        }
+        .hero-shape-3 {
+            width: 200px; height: 200px;
+            background: var(--primary);
+            bottom: 20%; right: 15%;
+        }
+        .hero .container {
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        .hero-content { color: var(--white); }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(245, 158, 11,0.15);
+            border: 1px solid rgba(245, 158, 11,0.3);
+            color: var(--primary);
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 24px;
+            animation: fadeInDown 0.8s ease;
+        }
+        .hero-content h2 {
+            font-size: 3.2rem;
+            line-height: 1.15;
+            margin-bottom: 20px;
+            animation: fadeInUp 0.8s ease 0.2s both;
+        }
+        .hero-content h2 span {
+            color: var(--primary);
+            position: relative;
+        }
+        .hero-content p {
+            font-size: 1.1rem;
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 36px;
+            max-width: 520px;
+            line-height: 1.8;
+            animation: fadeInUp 0.8s ease 0.4s both;
+        }
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+            animation: fadeInUp 0.8s ease 0.6s both;
+        }
+        .btn-primary {
+            background: var(--gradient-primary);
+            color: var(--white);
+            padding: 14px 32px;
+            border-radius: 30px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: var(--transition);
+            box-shadow: 0 4px 20px rgba(245, 158, 11,0.4);
+        }
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(245, 158, 11,0.55);
+        }
+        .btn-secondary {
+            background: rgba(255,255,255,0.1);
+            color: var(--white);
+            padding: 14px 32px;
+            border-radius: 30px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            border: 1px solid rgba(255,255,255,0.25);
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: var(--transition);
+        }
+        .btn-secondary:hover {
+            background: rgba(255,255,255,0.18);
+            border-color: rgba(255,255,255,0.4);
+            transform: translateY(-3px);
+        }
+        .hero-stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            animation: fadeInUp 0.8s ease 0.8s both;
+        }
+        .hero-stat {
+            text-align: center;
+            padding: 20px 10px;
+            background: rgba(255,255,255,0.06);
+            border-radius: var(--radius-md);
+            border: 1px solid rgba(255,255,255,0.08);
+            backdrop-filter: blur(10px);
+        }
+        .hero-stat-icon {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+        .hero-stat h3 {
+            font-size: 1.8rem;
+            color: var(--white);
+            margin-bottom: 4px;
+        }
+        .hero-stat p {
+            font-size: 0.78rem;
+            color: rgba(255,255,255,0.6);
+            margin: 0;
+            line-height: 1.3;
+        }
+        .hero-visual {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: fadeInRight 1s ease 0.5s both;
+        }
+        .hero-card {
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(20px);
+            border-radius: var(--radius-xl);
+            padding: 40px;
+            border: 1px solid rgba(255,255,255,0.12);
+            width: 100%;
+            max-width: 460px;
+        }
+        .hero-card-header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 28px;
+        }
+        .hero-card-icon {
+            width: 56px;
+            height: 56px;
+            background: var(--gradient-primary);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.4rem;
+        }
+        .hero-card-header h4 {
+            color: var(--white);
+            font-size: 1.1rem;
+        }
+        .hero-card-header span {
+            color: rgba(255,255,255,0.6);
+            font-size: 0.82rem;
+        }
+        .hero-card-route {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        .route-point {
+            flex: 1;
+        }
+        .route-point label {
+            display: block;
+            color: rgba(255,255,255,0.5);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+        }
+        .route-point span {
+            color: var(--white);
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        .route-arrow {
+            color: var(--primary);
+            font-size: 1.3rem;
+            margin-top: 18px;
+        }
+        .hero-card-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+        .detail-item {
+            background: rgba(255,255,255,0.05);
+            padding: 12px 14px;
+            border-radius: var(--radius-sm);
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+        .detail-item label {
+            display: block;
+            color: rgba(255,255,255,0.45);
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+        .detail-item span {
+            color: var(--white);
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        .detail-item .status-active {
+            color: #10B981;
+        }
+        .hero-card-btn {
+            width: 100%;
+            background: var(--gradient-primary);
+            color: var(--white);
+            padding: 14px;
+            border: none;
+            border-radius: var(--radius-sm);
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: var(--transition);
+        }
+        .hero-card-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(245, 158, 11,0.4);
+        }
+
+        /* ===== ABOUT SECTION ===== */
+        .about-section {
+            padding: 100px 0;
+            background: var(--white);
+        }
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+        .about-images {
+            position: relative;
+        }
+        .about-img-main {
+            width: 100%;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+        .about-img-main img {
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+            display: block;
+        }
+        .about-img-overlay {
+            position: absolute;
+            bottom: -30px;
+            right: -30px;
+            background: var(--gradient-primary);
+            color: var(--white);
+            padding: 24px 30px;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-lg);
+        }
+        .about-img-overlay h3 {
+            font-size: 2rem;
+        }
+        .about-img-overlay p {
+            font-size: 0.85rem;
+            opacity: 0.9;
+        }
+        .about-content .section-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(245, 158, 11,0.1);
+            color: var(--primary);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .about-content h2 {
+            font-size: 2.4rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        .about-content h2 span { color: var(--primary); }
+        .about-content > p {
+            color: var(--text-light);
+            margin-bottom: 30px;
+            line-height: 1.8;
+            font-size: 1.02rem;
+        }
+        .about-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 36px;
+        }
+        .about-feature {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+        }
+        .about-feature-icon {
+            width: 44px;
+            height: 44px;
+            min-width: 44px;
+            background: rgba(245, 158, 11,0.1);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 1rem;
+        }
+        .about-feature h4 {
+            font-size: 0.95rem;
+            color: var(--secondary);
+            margin-bottom: 4px;
+        }
+        .about-feature p {
+            font-size: 0.83rem;
+            color: var(--text-light);
+            line-height: 1.5;
+        }
+        .about-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--gradient-primary);
+            color: var(--white);
+            padding: 14px 32px;
+            border-radius: 30px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 0.95rem;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(245, 158, 11,0.35);
+        }
+        .about-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(245, 158, 11,0.5);
+        }
+
+        /* ===== SERVICES SECTION ===== */
+        .services-section {
+            padding: 100px 0;
+            background: var(--background);
+        }
+        .section-header {
+            text-align: center;
+            max-width: 650px;
+            margin: 0 auto 60px;
+        }
+        .section-header .section-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(245, 158, 11,0.1);
+            color: var(--primary);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .section-header h2 {
+            font-size: 2.4rem;
+            color: var(--secondary);
+            margin-bottom: 16px;
+        }
+        .section-header h2 span { color: var(--primary); }
+        .section-header p {
+            color: var(--text-light);
+            font-size: 1.02rem;
+            line-height: 1.7;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        .service-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 36px 30px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(0,0,0,0.04);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--gradient-primary);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease;
+        }
+        .service-card:hover::before { transform: scaleX(1); }
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+        .service-icon {
+            width: 64px;
+            height: 64px;
+            background: rgba(245, 158, 11,0.1);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            transition: var(--transition);
+        }
+        .service-card:hover .service-icon {
+            background: var(--gradient-primary);
+            color: var(--white);
+            transform: scale(1.05);
+        }
+        .service-card h3 {
+            font-size: 1.2rem;
+            color: var(--secondary);
+            margin-bottom: 12px;
+        }
+        .service-card p {
+            color: var(--text-light);
+            font-size: 0.92rem;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+        .service-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        .service-link:hover { gap: 12px; }
+
+        /* ===== STATISTICS SECTION ===== */
+        .statistics-section {
+            padding: 80px 0;
+            background: var(--gradient-secondary);
+            position: relative;
+            overflow: hidden;
+        }
+        .statistics-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"><circle cx="30" cy="30" r="1.5" fill="rgba(245, 158, 11,0.15)"/></svg>');
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            position: relative;
+            z-index: 2;
+        }
+        .stat-card {
+            text-align: center;
+            padding: 30px 20px;
+            background: rgba(255,255,255,0.05);
+            border-radius: var(--radius-md);
+            border: 1px solid rgba(255,255,255,0.08);
+            backdrop-filter: blur(10px);
+            transition: var(--transition);
+        }
+        .stat-card:hover {
+            background: rgba(255,255,255,0.1);
+            transform: translateY(-5px);
+        }
+        .stat-icon {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 14px;
+        }
+        .stat-number {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--white);
+            margin-bottom: 6px;
+        }
+        .stat-label {
+            color: rgba(255,255,255,0.65);
+            font-size: 0.9rem;
+        }
+
+        /* ===== PROCESS SECTION ===== */
+        .process-section {
+            padding: 100px 0;
+            background: var(--white);
+        }
+        .process-timeline {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            position: relative;
+        }
+        .process-timeline::before {
+            content: '';
+            position: absolute;
+            top: 55px;
+            left: 10%;
+            right: 10%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--primary));
+            opacity: 0.2;
+        }
+        .process-step {
+            text-align: center;
+            position: relative;
+        }
+        .process-step-number {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-primary);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+            font-size: 1.2rem;
+            margin: 0 auto 20px;
+            position: relative;
+            z-index: 2;
+            box-shadow: 0 4px 15px rgba(245, 158, 11,0.35);
+        }
+        .process-step-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(245, 158, 11,0.08);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 1.8rem;
+            margin: 0 auto 16px;
+        }
+        .process-step h4 {
+            font-size: 1.1rem;
+            color: var(--secondary);
+            margin-bottom: 10px;
+        }
+        .process-step p {
+            color: var(--text-light);
+            font-size: 0.88rem;
+            line-height: 1.6;
+            max-width: 260px;
+            margin: 0 auto;
+        }
+
+        /* ===== GLOBAL SUPPLY CHAIN SECTION ===== */
+        .global-supply-chain {
+            padding: 100px 0;
+            background: var(--background);
+        }
+        .global-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+        .global-content .section-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(245, 158, 11,0.1);
+            color: var(--primary);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .global-content h2 {
+            font-size: 2.4rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+        .global-content h2 span { color: var(--primary); }
+        .global-content > p {
+            color: var(--text-light);
+            margin-bottom: 28px;
+            line-height: 1.8;
+            font-size: 1.02rem;
+        }
+        .global-features-list {
+            margin-bottom: 30px;
+        }
+        .global-feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            padding: 16px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+        }
+        .global-feature-item:last-child { border-bottom: none; }
+        .global-feature-check {
+            width: 32px;
+            height: 32px;
+            min-width: 32px;
+            background: rgba(46,204,113,0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #10B981;
+            font-size: 0.8rem;
+        }
+        .global-feature-item h4 {
+            font-size: 1rem;
+            color: var(--secondary);
+            margin-bottom: 4px;
+        }
+        .global-feature-item p {
+            font-size: 0.88rem;
+            color: var(--text-light);
+        }
+        .global-visual {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .global-stat-card {
+            background: var(--white);
+            padding: 28px 24px;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(0,0,0,0.04);
+            text-align: center;
+            transition: var(--transition);
+        }
+        .global-stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+        .global-stat-card:nth-child(2) { margin-top: 30px; }
+        .global-stat-card:nth-child(3) { margin-top: -30px; }
+        .global-stat-card .gsc-icon {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 12px;
+        }
+        .global-stat-card h4 {
+            font-size: 1.4rem;
+            color: var(--secondary);
+            margin-bottom: 6px;
+        }
+        .global-stat-card p {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            line-height: 1.5;
+        }
+
+        /* ===== CUSTOMS CLEARANCE SECTION ===== */
+        .customs-section {
+            padding: 100px 0;
+            background: var(--gradient-secondary);
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+        .customs-section::before {
+            content: '';
+            position: absolute;
+            top: -200px;
+            right: -200px;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: rgba(245, 158, 11,0.06);
+        }
+        .customs-section::after {
+            content: '';
+            position: absolute;
+            bottom: -150px;
+            left: -150px;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.03);
+        }
+        .customs-header {
+            text-align: center;
+            max-width: 650px;
+            margin: 0 auto 60px;
+            position: relative;
+            z-index: 2;
+        }
+        .customs-header .section-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(245, 158, 11,0.15);
+            color: var(--primary);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .customs-header h2 {
+            font-size: 2.4rem;
+            color: var(--white);
+            margin-bottom: 16px;
+        }
+        .customs-header h2 span { color: var(--primary); }
+        .customs-header p {
+            color: rgba(255,255,255,0.7);
+            font-size: 1.02rem;
+            line-height: 1.7;
+        }
+        .customs-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            position: relative;
+            z-index: 2;
+        }
+        .customs-card {
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: var(--radius-lg);
+            padding: 32px 28px;
+            transition: var(--transition);
+            backdrop-filter: blur(10px);
+        }
+        .customs-card:hover {
+            background: rgba(255,255,255,0.1);
+            transform: translateY(-5px);
+        }
+        .customs-card-icon {
+            width: 56px;
+            height: 56px;
+            background: var(--gradient-primary);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.3rem;
+            margin-bottom: 18px;
+        }
+        .customs-card h3 {
+            font-size: 1.15rem;
+            color: var(--white);
+            margin-bottom: 10px;
+        }
+        .customs-card p {
+            color: rgba(255,255,255,0.65);
+            font-size: 0.9rem;
+            line-height: 1.7;
+        }
+
+        /* ===== DOCUMENTATION SECTION ===== */
+        .documentation-section {
+            padding: 100px 0;
+            background: var(--white);
+        }
+        .doc-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+        .doc-visual {
+            background: var(--background);
+            border-radius: var(--radius-xl);
+            padding: 40px;
+            border: 1px solid rgba(0,0,0,0.06);
+        }
+        .doc-card-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .doc-card-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            background: var(--white);
+            padding: 18px 22px;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+        .doc-card-item:hover {
+            transform: translateX(8px);
+            box-shadow: var(--shadow-md);
+        }
+        .doc-card-item-icon {
+            width: 48px;
+            height: 48px;
+            min-width: 48px;
+            background: rgba(245, 158, 11,0.1);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 1.1rem;
+        }
+        .doc-card-item h4 {
+            font-size: 1rem;
+            color: var(--secondary);
+            margin-bottom: 3px;
+        }
+        .doc-card-item p {
+            font-size: 0.82rem;
+            color: var(--text-light);
+        }
+        .doc-content .section-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(245, 158, 11,0.1);
+            color: var(--primary);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .doc-content h2 {
+            font-size: 2.4rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+        .doc-content h2 span { color: var(--primary); }
+        .doc-content > p {
+            color: var(--text-light);
+            margin-bottom: 28px;
+            line-height: 1.8;
+            font-size: 1.02rem;
+        }
+        .doc-benefits {
+            display: grid;
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+        .doc-benefit {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .doc-benefit i {
+            color: #10B981;
+            font-size: 1rem;
+        }
+        .doc-benefit span {
+            color: var(--text-dark);
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        /* ===== WORLDWIDE PARTNERS SECTION ===== */
+        .partners-section {
+            padding: 100px 0;
+            background: var(--background);
+        }
+        .partners-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+        .partners-map {
+            position: relative;
+            background: var(--white);
+            border-radius: var(--radius-xl);
+            padding: 40px;
+            box-shadow: var(--shadow-md);
+            border: 1px solid rgba(0,0,0,0.04);
+        }
+        .map-placeholder {
+            width: 100%;
+            height: 350px;
+            background: linear-gradient(135deg, rgba(245, 158, 11,0.05), rgba(44,62,80,0.08));
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .map-placeholder i {
+            font-size: 4rem;
+            color: rgba(245, 158, 11,0.25);
+        }
+        .map-dot {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            background: var(--primary);
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(245, 158, 11,0.5);
+        }
+        .map-dot::after {
+            content: '';
+            position: absolute;
+            inset: -6px;
+            border-radius: 50%;
+            border: 2px solid var(--primary);
+            opacity: 0.4;
+            animation: pulse-ring 2s ease-in-out infinite;
+        }
+        .map-dot-1 { top: 25%; left: 15%; }
+        .map-dot-2 { top: 30%; left: 45%; }
+        .map-dot-3 { top: 20%; left: 75%; }
+        .map-dot-4 { top: 55%; left: 30%; }
+        .map-dot-5 { top: 60%; left: 80%; }
+        .map-dot-6 { top: 40%; left: 60%; }
+        .map-dot-7 { top: 70%; left: 50%; }
+        .map-tooltip {
+            position: absolute;
+            background: var(--secondary);
+            color: var(--white);
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            white-space: nowrap;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-bottom: 6px;
+            opacity: 0;
+            transition: var(--transition);
+        }
+        .map-dot:hover .map-tooltip { opacity: 1; }
+        .partners-content .section-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(245, 158, 11,0.1);
+            color: var(--primary);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .partners-content h2 {
+            font-size: 2.4rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+        .partners-content h2 span { color: var(--primary); }
+        .partners-content > p {
+            color: var(--text-light);
+            margin-bottom: 28px;
+            line-height: 1.8;
+            font-size: 1.02rem;
+        }
+        .partner-highlights {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+        .partner-highlight {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 16px;
+            background: rgba(245, 158, 11,0.05);
+            border-radius: var(--radius-sm);
+            border: 1px solid rgba(245, 158, 11,0.1);
+        }
+        .partner-highlight i {
+            color: var(--primary);
+            font-size: 1.1rem;
+        }
+        .partner-highlight div h4 {
+            font-size: 0.9rem;
+            color: var(--secondary);
+            margin-bottom: 2px;
+        }
+        .partner-highlight div p {
+            font-size: 0.78rem;
+            color: var(--text-light);
+        }
+
+        /* ===== TESTIMONIALS SECTION ===== */
+        .testimonials-section {
+            padding: 100px 0;
+            background: var(--white);
+        }
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        .testimonial-card {
+            background: var(--background);
+            border-radius: var(--radius-lg);
+            padding: 32px;
+            border: 1px solid rgba(0,0,0,0.04);
+            transition: var(--transition);
+        }
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+        .testimonial-stars {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 16px;
+            color: var(--primary);
+            font-size: 0.9rem;
+        }
+        .testimonial-card > p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            line-height: 1.75;
+            margin-bottom: 24px;
+            font-style: italic;
+        }
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .testimonial-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--gradient-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+        .testimonial-info h4 {
+            font-size: 0.95rem;
+            color: var(--secondary);
+        }
+        .testimonial-info p {
+            font-size: 0.82rem;
+            color: var(--text-light);
+        }
+        .testimonial-cargo-type {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(245, 158, 11,0.08);
+            color: var(--primary);
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        /* ===== PRICING SECTION ===== */
+        .pricing-section {
+            padding: 100px 0;
+            background: var(--background);
+        }
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            align-items: start;
+        }
+        .pricing-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 36px;
+            border: 1px solid rgba(0,0,0,0.06);
+            transition: var(--transition);
+            position: relative;
+        }
+        .pricing-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+        .pricing-card.featured {
+            border: 2px solid var(--primary);
+            transform: scale(1.05);
+            box-shadow: var(--shadow-lg);
+        }
+        .pricing-card.featured:hover {
+            transform: scale(1.05) translateY(-5px);
+        }
+        .pricing-badge {
+            position: absolute;
+            top: -14px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--gradient-primary);
+            color: var(--white);
+            padding: 4px 20px;
+            border-radius: 20px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .pricing-header {
+            text-align: center;
+            padding-bottom: 24px;
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+            margin-bottom: 24px;
+        }
+        .pricing-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(245, 158, 11,0.1);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 1.4rem;
+            margin: 0 auto 14px;
+        }
+        .pricing-card.featured .pricing-icon {
+            background: var(--gradient-primary);
+            color: var(--white);
+        }
+        .pricing-header h3 {
+            font-size: 1.3rem;
+            color: var(--secondary);
+            margin-bottom: 6px;
+        }
+        .pricing-header p {
+            color: var(--text-light);
+            font-size: 0.85rem;
+        }
+        .pricing-amount {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+        .pricing-amount .currency {
+            font-size: 1.2rem;
+            color: var(--secondary);
+            font-weight: 600;
+            vertical-align: top;
+        }
+        .pricing-amount .price {
+            font-family: 'Poppins', sans-serif;
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--secondary);
+        }
+        .pricing-amount .period {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+        .pricing-features {
+            margin-bottom: 28px;
+        }
+        .pricing-feature {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 0;
+        }
+        .pricing-feature i {
+            font-size: 0.85rem;
+        }
+        .pricing-feature i.fa-check { color: #10B981; }
+        .pricing-feature i.fa-xmark { color: #DC2626; }
+        .pricing-feature span {
+            font-size: 0.92rem;
+            color: var(--text-dark);
+        }
+        .pricing-feature span.disabled {
+            color: var(--text-light);
+            text-decoration: line-through;
+        }
+        .pricing-btn {
+            width: 100%;
+            padding: 14px;
+            border-radius: 30px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: var(--transition);
+            border: 2px solid var(--primary);
+            background: transparent;
+            color: var(--primary);
+        }
+        .pricing-btn:hover {
+            background: var(--primary);
+            color: var(--white);
+        }
+        .pricing-card.featured .pricing-btn {
+            background: var(--gradient-primary);
+            color: var(--white);
+            border-color: var(--primary);
+        }
+        .pricing-card.featured .pricing-btn:hover {
+            box-shadow: 0 6px 25px rgba(245, 158, 11,0.5);
+            transform: translateY(-2px);
+        }
+
+        /* ===== CTA SECTION ===== */
+        .cta-section {
+            padding: 100px 0;
+            background: var(--gradient-primary);
+            position: relative;
+            overflow: hidden;
+        }
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: -100px;
+            right: -100px;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.08);
+        }
+        .cta-section::after {
+            content: '';
+            position: absolute;
+            bottom: -80px;
+            left: -80px;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.05);
+        }
+        .cta-content {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .cta-content i.main-icon {
+            font-size: 3rem;
+            color: var(--white);
+            margin-bottom: 24px;
+            display: block;
+        }
+        .cta-content h2 {
+            font-size: 2.6rem;
+            color: var(--white);
+            margin-bottom: 18px;
+        }
+        .cta-content p {
+            color: rgba(255,255,255,0.85);
+            font-size: 1.1rem;
+            margin-bottom: 36px;
+            line-height: 1.7;
+        }
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .cta-btn-primary {
+            background: var(--white);
+            color: var(--secondary);
+            padding: 14px 36px;
+            border-radius: 30px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: var(--transition);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+        .cta-btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+        }
+        .cta-btn-secondary {
+            background: transparent;
+            color: var(--white);
+            padding: 14px 36px;
+            border-radius: 30px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            border: 2px solid rgba(255,255,255,0.4);
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: var(--transition);
+        }
+        .cta-btn-secondary:hover {
+            background: rgba(255,255,255,0.15);
+            border-color: var(--white);
+        }
+
+        /* ===== NEWSLETTER ===== */
+        .newsletter-section {
+            padding: 80px 0;
+            background: var(--white);
+        }
+        .newsletter-container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .newsletter-container i {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 18px;
+        }
+        .newsletter-container h3 {
+            font-size: 1.8rem;
+            color: var(--secondary);
+            margin-bottom: 10px;
+        }
+        .newsletter-container p {
+            color: var(--text-light);
+            margin-bottom: 28px;
+            font-size: 0.95rem;
+        }
+        .newsletter-form {
+            display: flex;
+            gap: 12px;
+            max-width: 480px;
+            margin: 0 auto;
+        }
+        .newsletter-form input {
+            flex: 1;
+            padding: 14px 20px;
+            border: 2px solid rgba(0,0,0,0.08);
+            border-radius: 30px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            outline: none;
+            transition: var(--transition);
+        }
+        .newsletter-form input:focus { border-color: var(--primary); }
+        .newsletter-form button {
+            background: var(--gradient-primary);
+            color: var(--white);
+            padding: 14px 28px;
+            border-radius: 30px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 0.95rem;
+            border: none;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(245, 158, 11,0.35);
+        }
+        .newsletter-form button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(245, 158, 11,0.5);
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background: var(--secondary);
+            color: rgba(255,255,255,0.75);
+            padding: 80px 0 0;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 40px;
+            padding-bottom: 60px;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+        .footer-brand .logo {
+            margin-bottom: 20px;
+        }
+        .footer-brand .logo-text h1 { color: var(--white); }
+        .footer-brand p {
+            font-size: 0.92rem;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+        .footer-social {
+            display: flex;
+            gap: 12px;
+        }
+        .footer-social a {
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.08);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255,255,255,0.7);
+            transition: var(--transition);
+        }
+        .footer-social a:hover {
+            background: var(--primary);
+            color: var(--white);
+            transform: translateY(-3px);
+        }
+        .footer-column h4 {
+            color: var(--white);
+            font-size: 1.05rem;
+            margin-bottom: 20px;
+        }
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+        .footer-column ul li a {
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.65);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .footer-column ul li a:hover {
+            color: var(--primary);
+            transform: translateX(4px);
+        }
+        .footer-bottom {
+            padding: 24px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .footer-bottom p {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.5);
+        }
+        .footer-bottom-links {
+            display: flex;
+            gap: 20px;
+        }
+        .footer-bottom-links a {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.5);
+        }
+        .footer-bottom-links a:hover { color: var(--primary); }
+
+        /* ===== ANIMATIONS ===== */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInRight {
+            from { opacity: 0; transform: translateX(40px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes fadeInLeft {
+            from { opacity: 0; transform: translateX(-40px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes pulse-ring {
+            0% { transform: scale(1); opacity: 0.4; }
+            50% { transform: scale(1.5); opacity: 0; }
+            100% { transform: scale(1); opacity: 0.4; }
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+
+        [data-aos] { transition: all 0.6s ease; }
+
+<<<<<<< HEAD
+=======
+        /* Mobile */
+        @media (max-width: 575px) {
+            .hero .container { grid-template-columns: 1fr; text-align: center; }
+            .hero-stats-grid { grid-template-columns: 1fr 1fr; }
+            .hero-card-details { grid-template-columns: 1fr; }
+            .about-grid { grid-template-columns: 1fr; }
+            .about-features { grid-template-columns: 1fr; }
+            .about-img-overlay { display: none; }
+            .services-grid { grid-template-columns: 1fr; }
+            .stats-grid { grid-template-columns: 1fr 1fr; }
+            .process-timeline { grid-template-columns: 1fr; }
+            .global-grid { grid-template-columns: 1fr; }
+            .global-visual { grid-template-columns: 1fr; }
+            .global-stat-card:nth-child(2) { margin-top: 0; }
+            .global-stat-card:nth-child(3) { margin-top: 0; }
+            .customs-grid { grid-template-columns: 1fr; }
+            .doc-grid { grid-template-columns: 1fr; }
+            .partners-grid { grid-template-columns: 1fr; }
+            .partner-highlights { grid-template-columns: 1fr; }
+            .testimonials-grid { grid-template-columns: 1fr; }
+            .pricing-grid { grid-template-columns: 1fr; }
+            .pricing-card.featured { transform: none; }
+            .pricing-card.featured:hover { transform: translateY(-8px); }
+            .newsletter-form { flex-direction: column; max-width: 100%; }
+            .newsletter-form button { width: 100%; justify-content: center; }
+            .service-hero-title { font-size: 28px; }
+            .service-hero-stats { flex-wrap: wrap; gap: 12px; padding-top: 24px; }
+            .service-hero-stat { flex: 1 1 40%; max-width: none; border-right: none; padding: 10px 8px; }
+            .service-hero-stat-number { font-size: 24px; }
+            .cta-content h2 { font-size: 1.8rem; }
+            .footer-grid { grid-template-columns: 1fr; text-align: center; }
+            .footer-socials { justify-content: center; }
+            .footer-heading::after { left: 50%; transform: translateX(-50%); }
+            .footer-links a { justify-content: center; }
+            .footer-contact li { justify-content: center; }
+            .footer-bottom-inner { flex-direction: column; text-align: center; gap: 10px; }
+            .footer-bottom-links { justify-content: center; }
+        }
+
+        /* Small Tablets */
+        @media (min-width: 576px) and (max-width: 767px) {
+            .hero .container { grid-template-columns: 1fr; text-align: center; }
+            .hero-stats-grid { grid-template-columns: 1fr 1fr; }
+            .hero-card-details { grid-template-columns: 1fr; }
+            .about-grid { grid-template-columns: 1fr; }
+            .about-features { grid-template-columns: 1fr; }
+            .about-img-overlay { display: none; }
+            .services-grid { grid-template-columns: 1fr; }
+            .stats-grid { grid-template-columns: 1fr 1fr; }
+            .process-timeline { grid-template-columns: 1fr; }
+            .global-grid { grid-template-columns: 1fr; }
+            .global-visual { grid-template-columns: 1fr; }
+            .global-stat-card:nth-child(2) { margin-top: 0; }
+            .global-stat-card:nth-child(3) { margin-top: 0; }
+            .customs-grid { grid-template-columns: 1fr; }
+            .doc-grid { grid-template-columns: 1fr; }
+            .partners-grid { grid-template-columns: 1fr; }
+            .partner-highlights { grid-template-columns: 1fr; }
+            .testimonials-grid { grid-template-columns: 1fr; }
+            .pricing-grid { grid-template-columns: 1fr; }
+            .pricing-card.featured { transform: none; }
+            .pricing-card.featured:hover { transform: translateY(-8px); }
+            .newsletter-form { flex-direction: column; max-width: 100%; }
+            .newsletter-form button { width: 100%; justify-content: center; }
+            .service-hero-title { font-size: 32px; }
+            .service-hero-stats { flex-wrap: wrap; gap: 12px; padding-top: 24px; }
+            .service-hero-stat { flex: 1 1 40%; max-width: none; border-right: none; padding: 10px 8px; }
+            .service-hero-stat-number { font-size: 28px; }
+            .cta-content h2 { font-size: 2rem; }
+            .footer-grid { grid-template-columns: 1fr; text-align: center; }
+            .footer-socials { justify-content: center; }
+            .footer-heading::after { left: 50%; transform: translateX(-50%); }
+            .footer-links a { justify-content: center; }
+            .footer-contact li { justify-content: center; }
+            .footer-bottom-inner { flex-direction: column; text-align: center; gap: 10px; }
+            .footer-bottom-links { justify-content: center; }
+        }
+
+        /* Tablets */
+        @media (min-width: 768px) and (max-width: 991px) {
+            .hero .container { grid-template-columns: 1fr; text-align: center; }
+            .hero-stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .hero-card-details { grid-template-columns: 1fr 1fr; }
+            .about-grid { grid-template-columns: 1fr; }
+            .about-features { grid-template-columns: 1fr 1fr; }
+            .about-img-overlay { display: none; }
+            .services-grid { grid-template-columns: repeat(2, 1fr); }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .process-timeline { grid-template-columns: repeat(2, 1fr); }
+            .global-grid { grid-template-columns: 1fr; }
+            .global-visual { grid-template-columns: 1fr; }
+            .global-stat-card:nth-child(2) { margin-top: 0; }
+            .global-stat-card:nth-child(3) { margin-top: 0; }
+            .customs-grid { grid-template-columns: repeat(2, 1fr); }
+            .doc-grid { grid-template-columns: 1fr; }
+            .partners-grid { grid-template-columns: 1fr; }
+            .partner-highlights { grid-template-columns: 1fr; }
+            .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+            .pricing-grid { grid-template-columns: repeat(2, 1fr); }
+            .pricing-card.featured { transform: scale(1); }
+            .pricing-card.featured:hover { transform: translateY(-8px); }
+            .newsletter-form { max-width: 100%; }
+            .service-hero-title { font-size: 38px; }
+            .service-hero-stats { flex-wrap: wrap; gap: 12px; padding-top: 24px; }
+            .service-hero-stat { flex: 1 1 40%; max-width: none; border-right: none; }
+            .footer-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        /* Small Laptops */
+        @media (min-width: 992px) and (max-width: 1199px) {
+            .services-grid { grid-template-columns: repeat(2, 1fr); }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .process-timeline { grid-template-columns: repeat(2, 1fr); }
+            .customs-grid { grid-template-columns: repeat(2, 1fr); }
+            .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+            .pricing-grid { grid-template-columns: repeat(2, 1fr); }
+            .service-hero-title { font-size: 42px; }
+            .footer-grid { grid-template-columns: repeat(5, 1fr); }
+        }
+
+        /* Desktop */
+        @media (min-width: 1200px) and (max-width: 1399px) {
+            .footer-grid { grid-template-columns: repeat(5, 1fr); }
+        }
+
+        /* Large Desktop */
+        @media (min-width: 1400px) {
+            .footer-grid { grid-template-columns: repeat(5, 1fr); }
+        }
+>>>>>>> b064112 (completed)
+    </style>
+</head>
+<body>
+
+    <!-- PAGE LOADER -->
+    <div id="page-loader" class="page-loader">
+      <div class="loader-content">
+        <div class="loader-truck"><i class="fas fa-truck"></i></div>
+        <div class="loader-bar"><span></span></div>
+        <p class="loader-text">Loading...</p>
+      </div>
+    </div>
+
+    <!-- BACK TO TOP -->
+    <a href="#home" id="back-to-top" class="back-to-top" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- FLOATING CONTACT BUTTONS -->
+    <div class="floating-contact">
+      <a href="404.html" class="floating-btn whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="tel:+1234567890" class="floating-btn call-btn" aria-label="Call us">
+        <i class="fas fa-phone"></i>
+      </a>
+      <a href="mailto:info@stackly.com" class="floating-btn email-btn" aria-label="Email us">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+
+    <!-- HEADER TOP BAR -->
+    <div class="top-bar" id="home">
+      <div class="container">
+        <div class="top-bar-inner">
+          <div class="top-bar-left">
+            <a href="tel:+1234567890" class="top-bar-item"><i class="fas fa-phone-alt"></i> +1 234 567 890</a>
+            <a href="mailto:info@stackly.com" class="top-bar-item"><i class="fas fa-envelope"></i> info@stackly.com</a>
+            <span class="top-bar-item"><i class="fas fa-clock"></i> Mon &ndash; Sat: 8:00 AM &ndash; 7:00 PM</span>
+          </div>
+          <div class="top-bar-right">
+            <div class="top-bar-socials">
+              <a href="404.html" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="404.html" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+              <a href="404.html" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="404.html" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            <button id="dark-mode-toggle-top" class="dark-mode-toggle" aria-label="Toggle dark mode">
+              <i class="fas fa-moon"></i><i class="fas fa-sun"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN HEADER / NAVIGATION -->
+    <header class="main-header" id="main-header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="logo">
+            <img src="images/logo.webp" alt="Stackly Logo" class="logo-img">
+          </a>
+          <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item has-dropdown">
+              <a href="#" class="nav-link">About <i class="fas fa-chevron-down"></i></a>
+              <ul class="dropdown">
+                <li><a href="about.html" class="dropdown-link">About Us</a></li>
+                <li><a href="team.html" class="dropdown-link">Our Team</a></li>                <li><a href="faq.html" class="dropdown-link">FAQ</a></li>
+              </ul>
+            </li>
+            <li class="nav-item has-dropdown active">
+              <a href="#" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+              <ul class="dropdown">
+                <li><a href="road-freight.html" class="dropdown-link">Road Freight</a></li>
+
+                <li><a href="air-freight.html" class="dropdown-link">Air Freight</a></li>
+                <li><a href="warehousing.html" class="dropdown-link">Warehousing</a></li>              </ul>
+            </li>
+            <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+            <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+            <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="login.html" class="nav-link">Sign In</a></li>
+            <li class="nav-item"><a href="register.html" class="btn btn-primary nav-cta">Sign Up</a></li>
+          </ul>
+
+    <div class="nav-overlay"></div>
+
+    <!-- HERO SECTION -->
+    <section class="service-page-hero" id="hero">
+        <div class="service-hero-bg" style="background: url('images/hero-freight-forwarding.webp') center/cover no-repeat;"></div>
+        <div class="service-hero-overlay"></div>
+        <div class="container">
+            <div class="service-hero-content">
+                <span class="service-hero-badge"><i class="fas fa-globe-americas"></i> Global Freight Solutions</span>
+                <h1 class="service-hero-title">Global Freight Forwarding<br>&amp; <span>Supply Chain Solutions</span></h1>
+                <p class="service-hero-desc">Navigate global trade with confidence. Stackly delivers end-to-end freight forwarding services spanning 190+ countries with customs expertise, real-time tracking, and door-to-door logistics management.</p>
+                <div class="service-hero-btns">
+                    <a href="contact.html" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Request a Quote</a>
+                    <a href="#services" class="btn btn-outline-light"><i class="fas fa-th-large"></i> Our Services</a>
+                </div>
+                <div class="service-hero-stats">
+                    <div class="service-hero-stat">
+                        <span class="service-hero-stat-number" data-count="10000">0</span>
+                        <span class="service-hero-stat-suffix">+</span>
+                        <span class="service-hero-stat-label">Shipments</span>
+                    </div>
+                    <div class="service-hero-stat">
+                        <span class="service-hero-stat-number" data-count="190">0</span>
+                        <span class="service-hero-stat-suffix">+</span>
+                        <span class="service-hero-stat-label">Countries</span>
+                    </div>
+                    <div class="service-hero-stat">
+                        <span class="service-hero-stat-number" data-count="500">0</span>
+                        <span class="service-hero-stat-suffix">+</span>
+                        <span class="service-hero-stat-label">Partners</span>
+                    </div>
+                    <div class="service-hero-stat">
+                        <span class="service-hero-stat-number" data-count="98">0</span>
+                        <span class="service-hero-stat-suffix">%</span>
+                        <span class="service-hero-stat-label">On-Time</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-images" data-aos="fade-right">
+                    <div class="about-img-main">
+                        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=700&h=420&fit=crop" alt="Freight forwarding operations at container port">
+                    </div>
+                    <div class="about-img-overlay">
+                        <h3>15+</h3>
+                        <p>Years of Freight Expertise</p>
+                    </div>
+                </div>
+                <div class="about-content" data-aos="fade-left">
+                    <div class="section-badge"><i class="fas fa-anchor"></i> About Stackly Freight</div>
+                    <h2>Trusted Global Supply Chain <span>Partners</span></h2>
+                    <p>With over 15 years in the freight forwarding industry, Stackly has built a reputation for reliability, transparency, and cost-effective logistics solutions. Our deep industry knowledge spans customs regulations, trade compliance, and complex multi-modal supply chain operations.</p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="about-feature-icon"><i class="fas fa-passport"></i></div>
+                            <div>
+                                <h4>Customs Expertise</h4>
+                                <p>Licensed customs brokers in 50+ countries</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon"><i class="fas fa-file-lines"></i></div>
+                            <div>
+                                <h4>Full Documentation</h4>
+                                <p>Bills of lading, CO, phytosanitary certs</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon"><i class="fas fa-satellite-dish"></i></div>
+                            <div>
+                                <h4>Real-time Tracking</h4>
+                                <p>GPS-enabled cargo visibility 24/7</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon"><i class="fas fa-shield-halved"></i></div>
+                            <div>
+                                <h4>Cargo Insurance</h4>
+                                <p>Comprehensive marine & air coverage</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="about.html" class="about-cta">
+                        <i class="fas fa-arrow-right"></i> Learn More About Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge"><i class="fas fa-cogs"></i> Our Services</div>
+                <h2>Comprehensive <span>Freight Forwarding</span> Solutions</h2>
+                <p>From ocean cargo to expedited air shipments, we provide tailored logistics services designed to optimize your supply chain and reduce costs.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon"><i class="fas fa-ship"></i></div>
+                    <h3>Sea Freight</h3>
+                    <p>Full container load (FCL) and less-than-container load (LCL) shipping with competitive rates across all major trade lanes and port pairs worldwide.</p>
+                    <a href="#" class="service-link"><i class="fas fa-arrow-right"></i> Learn More</a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon"><i class="fas fa-plane"></i></div>
+                    <h3>Air Freight</h3>
+                    <p>Expedited air cargo solutions for time-sensitive shipments. Direct, charter, and consolidated air freight services connecting 300+ airports globally.</p>
+                    <a href="#" class="service-link"><i class="fas fa-arrow-right"></i> Learn More</a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon"><i class="fas fa-truck"></i></div>
+                    <h3>Land Transport</h3>
+                    <p>Reliable road and rail freight networks for domestic and cross-border trucking with GPS-tracked fleet and temperature-controlled options.</p>
+                    <a href="#" class="service-link"><i class="fas fa-arrow-right"></i> Learn More</a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon"><i class="fas fa-stamp"></i></div>
+                    <h3>Customs Brokerage</h3>
+                    <p>Licensed customs brokers handle classification, valuation, permits, and compliance filings to ensure smooth clearance at every port of entry.</p>
+                    <a href="#" class="service-link"><i class="fas fa-arrow-right"></i> Learn More</a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon"><i class="fas fa-shield-halved"></i></div>
+                    <h3>Cargo Insurance</h3>
+                    <p>Comprehensive marine, air, and land cargo insurance policies covering loss, damage, theft, and natural disasters for total shipment protection.</p>
+                    <a href="#" class="service-link"><i class="fas fa-arrow-right"></i> Learn More</a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Trade Consulting</h3>
+                    <p>Strategic supply chain optimization, tariff analysis, Incoterms advisory, and market entry consulting for global trade expansion.</p>
+                    <a href="#" class="service-link"><i class="fas fa-arrow-right"></i> Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATISTICS SECTION -->
+    <section class="statistics-section" id="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-icon"><i class="fas fa-boxes-stacked"></i></div>
+                    <div class="stat-number"><span class="counter" data-target="45000">0</span>+</div>
+                    <div class="stat-label">Containers Shipped Annually</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-icon"><i class="fas fa-warehouse"></i></div>
+                    <div class="stat-number"><span class="counter" data-target="85">0</span>+</div>
+                    <div class="stat-label">Warehouse Facilities</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-icon"><i class="fas fa-users"></i></div>
+                    <div class="stat-number"><span class="counter" data-target="3200">0</span>+</div>
+                    <div class="stat-label">Active Clients Worldwide</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-icon"><i class="fas fa-certificate"></i></div>
+                    <div class="stat-number"><span class="counter" data-target="12">0</span>+</div>
+                    <div class="stat-label">Industry Certifications</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESS SECTION -->
+    <section class="process-section" id="process">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge"><i class="fas fa-route"></i> How We Work</div>
+                <h2>Our Freight Forwarding <span>Process</span></h2>
+                <p>A streamlined 6-step process that ensures your cargo moves efficiently from origin to destination with full visibility at every stage.</p>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="process-step-number">01</div>
+                    <div class="process-step-icon"><i class="fas fa-comments"></i></div>
+                    <h4>Consultation</h4>
+                    <p>We analyze your cargo requirements, trade lanes, and timeline to develop the optimal shipping strategy.</p>
+                </div>
+                <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="process-step-number">02</div>
+                    <div class="process-step-icon"><i class="fas fa-route"></i></div>
+                    <h4>Route Planning</h4>
+                    <p>Our logistics experts design the most cost-effective and time-efficient routing across all transport modes.</p>
+                </div>
+                <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="process-step-number">03</div>
+                    <div class="process-step-icon"><i class="fas fa-file-alt"></i></div>
+                    <h4>Documentation</h4>
+                    <p>Preparation and verification of all shipping documents including bills of lading, invoices, and certificates.</p>
+                </div>
+                <div class="process-step" data-aos="fade-up" data-aos-delay="400">
+                    <div class="process-step-number">04</div>
+                    <div class="process-step-icon"><i class="fas fa-stamp"></i></div>
+                    <h4>Customs Clearance</h4>
+                    <p>Licensed brokers handle all import/export filings, duties, tariffs, and regulatory compliance requirements.</p>
+                </div>
+                <div class="process-step" data-aos="fade-up" data-aos-delay="500">
+                    <div class="process-step-number">05</div>
+                    <div class="process-step-icon"><i class="fas fa-truck-plane"></i></div>
+                    <h4>Transportation</h4>
+                    <p>Cargo moves via sea, air, or land with GPS tracking, temperature monitoring, and milestone notifications.</p>
+                </div>
+                <div class="process-step" data-aos="fade-up" data-aos-delay="600">
+                    <div class="process-step-number">06</div>
+                    <div class="process-step-icon"><i class="fas fa-box-open"></i></div>
+                    <h4>Final Delivery</h4>
+                    <p>Last-mile delivery to the consignee with proof of delivery, cargo inspection, and post-shipment reporting.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GLOBAL SUPPLY CHAIN SECTION -->
+    <section class="global-supply-chain" id="global-supply-chain">
+        <div class="container">
+            <div class="global-grid">
+                <div class="global-content" data-aos="fade-right">
+                    <div class="section-badge"><i class="fas fa-globe"></i> Global Network</div>
+                    <h2>End-to-End <span>Supply Chain</span> Management</h2>
+                    <p>Stackly provides complete visibility and control across your entire supply chain. From raw material sourcing to final-mile delivery, we orchestrate every element with precision, technology, and deep market expertise.</p>
+                    <div class="global-features-list">
+                        <div class="global-feature-item">
+                            <div class="global-feature-check"><i class="fas fa-check"></i></div>
+                            <div>
+                                <h4>Multi-Modal Integration</h4>
+                                <p>Seamless coordination across ocean, air, rail, and road transport for optimal transit times and costs.</p>
+                            </div>
+                        </div>
+                        <div class="global-feature-item">
+                            <div class="global-feature-check"><i class="fas fa-check"></i></div>
+                            <div>
+                                <h4>Digital Supply Chain Platform</h4>
+                                <p>Cloud-based portal with real-time tracking, document management, and predictive analytics dashboards.</p>
+                            </div>
+                        </div>
+                        <div class="global-feature-item">
+                            <div class="global-feature-check"><i class="fas fa-check"></i></div>
+                            <div>
+                                <h4>Risk Mitigation Strategies</h4>
+                                <p>Proactive contingency planning, cargo insurance, and geopolitical risk assessment for resilient supply chains.</p>
+                            </div>
+                        </div>
+                        <div class="global-feature-item">
+                            <div class="global-feature-check"><i class="fas fa-check"></i></div>
+                            <div>
+                                <h4>Sustainable Logistics</h4>
+                                <p>Carbon offset programs, green shipping routes, and ESG-compliant supply chain solutions.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="about-cta">
+                        <i class="fas fa-arrow-right"></i> Optimize Your Supply Chain
+                    </a>
+                </div>
+                <div class="global-visual" data-aos="fade-left">
+                    <div class="global-stat-card">
+                        <div class="gsc-icon"><i class="fas fa-ship"></i></div>
+                        <h4>Sea Freight</h4>
+                        <p>28,000+ TEU shipped monthly across Pacific, Atlantic, and Indian Ocean routes</p>
+                    </div>
+                    <div class="global-stat-card">
+                        <div class="gsc-icon"><i class="fas fa-plane"></i></div>
+                        <h4>Air Cargo</h4>
+                        <p>15,000+ tons airfreight handled with priority and economy options</p>
+                    </div>
+                    <div class="global-stat-card">
+                        <div class="gsc-icon"><i class="fas fa-warehouse"></i></div>
+                        <h4>Warehousing</h4>
+                        <p>2M+ sq. ft. of bonded and free-trade zone warehouse space</p>
+                    </div>
+                    <div class="global-stat-card">
+                        <div class="gsc-icon"><i class="fas fa-truck-fast"></i></div>
+                        <h4>Last-Mile</h4>
+                        <p>Same-day and next-day delivery options in 50+ major metro areas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CUSTOMS CLEARANCE SECTION -->
+    <section class="customs-section" id="customs">
+        <div class="container">
+            <div class="customs-header" data-aos="fade-up">
+                <div class="section-badge"><i class="fas fa-landmark"></i> Customs Expertise</div>
+                <h2>Seamless <span>Customs Clearance</span> Worldwide</h2>
+                <p>Navigate complex international trade regulations with our team of licensed customs brokers. We handle documentation, classification, valuation, and compliance across 190+ countries.</p>
+            </div>
+            <div class="customs-grid">
+                <div class="customs-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="customs-card-icon"><i class="fas fa-search"></i></div>
+                    <h3>HS Code Classification</h3>
+                    <p>Accurate Harmonized System classification to determine correct duty rates, tariff quotas, and regulatory requirements for your goods.</p>
+                </div>
+                <div class="customs-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="customs-card-icon"><i class="fas fa-coins"></i></div>
+                    <h3>Duty & Tax Optimization</h3>
+                    <p>Strategic use of free trade agreements, duty drawback programs, and bonded warehouse facilities to minimize landed costs.</p>
+                </div>
+                <div class="customs-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="customs-card-icon"><i class="fas fa-file-shield"></i></div>
+                    <h3>Regulatory Compliance</h3>
+                    <p>Full compliance with CBP, EU customs, FDA, USDA, and other regulatory bodies with proactive audit preparation and documentation.</p>
+                </div>
+                <div class="customs-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="customs-card-icon"><i class="fas fa-passport"></i></div>
+                    <h3>Import/Export Licenses</h3>
+                    <p>Assistance with obtaining necessary import permits, export licenses, phytosanitary certificates, and country-of-origin documentation.</p>
+                </div>
+                <div class="customs-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="customs-card-icon"><i class="fas fa-clock-rotate-left"></i></div>
+                    <h3>Bonded Storage</h3>
+                    <p>Access to bonded warehouse facilities allowing duty deferral and streamlined customs processing for high-volume importers.</p>
+                </div>
+                <div class="customs-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="customs-card-icon"><i class="fas fa-gavel"></i></div>
+                    <h3>Audit & Dispute Resolution</h3>
+                    <p>Expert representation in customs audits, valuation disputes, and penalty mitigation with a 95% favorable resolution rate.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DOCUMENTATION SECTION -->
+    <section class="documentation-section" id="documentation">
+        <div class="container">
+            <div class="doc-grid">
+                <div class="doc-visual" data-aos="fade-right">
+                    <div class="doc-card-stack">
+                        <div class="doc-card-item">
+                            <div class="doc-card-item-icon"><i class="fas fa-file-lines"></i></div>
+                            <div>
+                                <h4>Bills of Lading</h4>
+                                <p>Original, telex, and sea waybills processed in 24 hours</p>
+                            </div>
+                        </div>
+                        <div class="doc-card-item">
+                            <div class="doc-card-item-icon"><i class="fas fa-file-invoice"></i></div>
+                            <div>
+                                <h4>Commercial Invoices</h4>
+                                <p>Verified and compliant invoice preparation for customs</p>
+                            </div>
+                        </div>
+                        <div class="doc-card-item">
+                            <div class="doc-card-item-icon"><i class="fas fa-file-certificate"></i></div>
+                            <div>
+                                <h4>Certificates of Origin</h4>
+                                <p>Chamber of Commerce and preferential trade certifications</p>
+                            </div>
+                        </div>
+                        <div class="doc-card-item">
+                            <div class="doc-card-item-icon"><i class="fas fa-file-medical"></i></div>
+                            <div>
+                                <h4>Phytosanitary Certificates</h4>
+                                <p>Agricultural and food product export compliance docs</p>
+                            </div>
+                        </div>
+                        <div class="doc-card-item">
+                            <div class="doc-card-item-icon"><i class="fas fa-file-shield"></i></div>
+                            <div>
+                                <h4>Insurance Certificates</h4>
+                                <p>Cargo insurance documentation and claims support</p>
+                            </div>
+                        </div>
+                        <div class="doc-card-item">
+                            <div class="doc-card-item-icon"><i class="fas fa-file-circle-check"></i></div>
+                            <div>
+                                <h4>Inspection Reports</h4>
+                                <p>Pre-shipment SGS/Bureau Veritas inspection coordination</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="doc-content" data-aos="fade-left">
+                    <div class="section-badge"><i class="fas fa-folder-open"></i> Documentation</div>
+                    <h2>Trade <span>Documentation</span> Management</h2>
+                    <p>Accurate documentation is the backbone of international trade. Our dedicated documentation team manages all export and import paperwork, ensuring compliance with destination country requirements and preventing costly delays at customs.</p>
+                    <div class="doc-benefits">
+                        <div class="doc-benefit">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Automated document generation and validation</span>
+                        </div>
+                        <div class="doc-benefit">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Digital document repository with 10-year archival</span>
+                        </div>
+                        <div class="doc-benefit">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Multi-language translation and notarization services</span>
+                        </div>
+                        <div class="doc-benefit">
+                            <i class="fas fa-check-circle"></i>
+                            <span>EDocument integration with all major shipping lines</span>
+                        </div>
+                        <div class="doc-benefit">
+                            <i class="fas fa-check-circle"></i>
+                            <span>AES/EEI filing for US exports</span>
+                        </div>
+                        <div class="doc-benefit">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Letters of credit document preparation</span>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="about-cta">
+                        <i class="fas fa-arrow-right"></i> Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WORLDWIDE PARTNERS SECTION -->
+    <section class="partners-section" id="partners">
+        <div class="container">
+            <div class="partners-grid">
+                <div class="partners-map" data-aos="fade-right">
+                    <div class="map-placeholder">
+                        <i class="fas fa-earth-americas"></i>
+                        <div class="map-dot map-dot-1">
+                            <span class="map-tooltip">New York, USA</span>
+                        </div>
+                        <div class="map-dot map-dot-2">
+                            <span class="map-tooltip">London, UK</span>
+                        </div>
+                        <div class="map-dot map-dot-3">
+                            <span class="map-tooltip">Shanghai, China</span>
+                        </div>
+                        <div class="map-dot map-dot-4">
+                            <span class="map-tooltip">S�o Paulo, Brazil</span>
+                        </div>
+                        <div class="map-dot map-dot-5">
+                            <span class="map-tooltip">Sydney, Australia</span>
+                        </div>
+                        <div class="map-dot map-dot-6">
+                            <span class="map-tooltip">Dubai, UAE</span>
+                        </div>
+                        <div class="map-dot map-dot-7">
+                            <span class="map-tooltip">Cape Town, SA</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="partners-content" data-aos="fade-left">
+                    <div class="section-badge"><i class="fas fa-handshake"></i> Our Network</div>
+                    <h2>Worldwide <span>Partner</span> Network</h2>
+                    <p>Our carefully curated network of 500+ vetted freight forwarders, customs brokers, and logistics providers spans every major trade lane and ensures seamless cargo handling regardless of destination.</p>
+                    <div class="partner-highlights">
+                        <div class="partner-highlight">
+                            <i class="fas fa-ship"></i>
+                            <div>
+                                <h4>120+ Ocean Carriers</h4>
+                                <p>Preferred rates with all major lines</p>
+                            </div>
+                        </div>
+                        <div class="partner-highlight">
+                            <i class="fas fa-plane"></i>
+                            <div>
+                                <h4>80+ Airlines</h4>
+                                <p>Cargo hold agreements worldwide</p>
+                            </div>
+                        </div>
+                        <div class="partner-highlight">
+                            <i class="fas fa-truck"></i>
+                            <div>
+                                <h4>200+ Hauliers</h4>
+                                <p>Door-to-door trucking partners</p>
+                            </div>
+                        </div>
+                        <div class="partner-highlight">
+                            <i class="fas fa-warehouse"></i>
+                            <div>
+                                <h4>85+ Warehouses</h4>
+                                <p>Bonded & distribution centers</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="about-cta">
+                        <i class="fas fa-arrow-right"></i> Join Our Network
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge"><i class="fas fa-quote-left"></i> Testimonials</div>
+                <h2>What Our <span>Clients</span> Say</h2>
+                <p>Trusted by importers, exporters, and manufacturers across the globe for reliable freight forwarding services.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"Stackly handles our entire ocean freight program across Asia-Europe lanes. Their customs expertise saved us over $180K in duties last year through strategic FTA utilization. Truly exceptional service."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">MC</div>
+                        <div class="testimonial-info">
+                            <h4>Marcus Chen</h4>
+                            <p>VP Supply Chain, GlobalTech Industries</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-cargo-type"><i class="fas fa-microchip"></i> Electronics & Semiconductors</div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"We ship perishable food products that require temperature-controlled logistics. Stackly's cold chain management and documentation team ensures our goods arrive fresh every time. Their attention to phytosanitary requirements is impeccable."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">SR</div>
+                        <div class="testimonial-info">
+                            <h4>Sofia Rodriguez</h4>
+                            <p>Export Director, FreshHarvest Co.</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-cargo-type"><i class="fas fa-apple-whole"></i> Perishable Food & Beverages</div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>"The real-time tracking dashboard and proactive communication from Stackly transformed our supply chain visibility. We reduced stock-outs by 35% and improved our inventory planning significantly."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">JT</div>
+                        <div class="testimonial-info">
+                            <h4>James Thompson</h4>
+                            <p>Logistics Manager, AutoParts Europe</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-cargo-type"><i class="fas fa-gears"></i> Automotive Parts & Machinery</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING SECTION -->
+    <section class="pricing-section" id="pricing">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-badge"><i class="fas fa-tags"></i> Pricing Plans</div>
+                <h2>Freight Forwarding <span>Pricing</span> Tiers</h2>
+                <p>Flexible pricing models designed for businesses of every size, from startups to multinational enterprises.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pricing-header">
+                        <div class="pricing-icon"><i class="fas fa-box"></i></div>
+                        <h3>Starter Freight</h3>
+                        <p>For small businesses & occasional shippers</p>
+                    </div>
+                    <div class="pricing-amount">
+                        <span class="currency">$</span><span class="price">499</span><span class="period">/shipment</span>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Up to 5 CBM cargo volume</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Sea or air freight option</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Basic customs clearance</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Standard documentation</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Email support</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-xmark"></i>
+                            <span class="disabled">Door-to-door delivery</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-xmark"></i>
+                            <span class="disabled">Dedicated account manager</span>
+                        </div>
+                    </div>
+                    <button class="pricing-btn">
+                        <i class="fas fa-arrow-right"></i> Get Started
+                    </button>
+                </div>
+                <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <div class="pricing-icon"><i class="fas fa-boxes-stacked"></i></div>
+                        <h3>Business Freight</h3>
+                        <p>For regular shippers & growing companies</p>
+                    </div>
+                    <div class="pricing-amount">
+                        <span class="currency">$</span><span class="price">1,999</span><span class="period">/month</span>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Up to 50 CBM cargo volume</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Multi-modal transport options</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Full customs brokerage</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Complete trade documentation</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Real-time tracking dashboard</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Door-to-door delivery</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Dedicated account manager</span>
+                        </div>
+                    </div>
+                    <button class="pricing-btn">
+                        <i class="fas fa-arrow-right"></i> Choose Plan
+                    </button>
+                </div>
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="pricing-header">
+                        <div class="pricing-icon"><i class="fas fa-industry"></i></div>
+                        <h3>Enterprise Freight</h3>
+                        <p>For large-scale global operations</p>
+                    </div>
+                    <div class="pricing-amount">
+                        <span class="currency">$</span><span class="price">Custom</span>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Unlimited cargo volume</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>All transport modes included</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Premium customs & compliance</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>End-to-end documentation</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>24/7 priority support line</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>API integration & EDI</span>
+                        </div>
+                        <div class="pricing-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Custom SLA & volume discounts</span>
+                        </div>
+                    </div>
+                    <button class="pricing-btn">
+                        <i class="fas fa-arrow-right"></i> Contact Sales
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section" id="cta">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <i class="fas fa-truck-plane main-icon"></i>
+                <h2>Streamline Your Supply Chain</h2>
+                <p>Partner with Stackly for reliable, cost-effective freight forwarding solutions. From a single pallet to full container loads, our global network and customs expertise ensure your cargo arrives on time, every time.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="cta-btn-primary">
+                        <i class="fas fa-paper-plane"></i> Get a Free Quote
+                    </a>
+                    <a href="tel:+18005551234" class="cta-btn-secondary">
+                        <i class="fas fa-phone"></i> Call +1 (800) 555-1234
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER SECTION -->
+    <section class="newsletter-section" id="newsletter">
+        <div class="container">
+            <div class="newsletter-container" data-aos="fade-up">
+                <i class="fas fa-envelope-open-text"></i>
+                <h3>Stay Updated on Global Shipping</h3>
+                <p>Subscribe to our newsletter for freight rate updates, trade regulation changes, port alerts, and supply chain insights.</p>
+                <form class="newsletter-form" onsubmit="return false;">
+                    <input type="email" placeholder="Enter your email address" required aria-label="Email address">
+                    <button type="submit"><i class="fas fa-paper-plane"></i> Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+<!-- FOOTER -->
+<footer class="footer-section" id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col footer-brand">
+        <a href="index.html" class="footer-logo">
+          <img src="images/logo.webp" alt="Stackly Logo" class="logo-img">
+        </a>
+        <p class="footer-desc">Stackly Logistics is a premier transportation and logistics company delivering excellence across the globe. With 15+ years of experience and a modern fleet, we are your trusted supply chain partner.</p>
+        <div class="footer-socials">
+          <a href="404.html" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="404.html" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="404.html" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="404.html" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="404.html" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Our Services</h4>
+        <ul class="footer-links">
+          <li><a href="road-freight.html">Road Freight</a></li>
+          <li><a href="air-freight.html">Air Freight</a></li>
+          <li><a href="warehousing.html">Warehousing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Support</h4>
+        <ul class="footer-links">
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact Support</a></li>
+          <li><a href="404.html">Terms of Service</a></li>
+          <li><a href="404.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Contact Info</h4>
+        <ul class="footer-contact">
+          <li><i class="fas fa-map-marker-alt"></i> 123 Logistics Ave, Suite 100, New York, NY 10001</li>
+          <li><i class="fas fa-phone-alt"></i> <a href="tel:+1234567890">+1 234 567 890</a></li>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:info@stackly.com">info@stackly.com</a></li>
+          <li><i class="fas fa-clock"></i> Mon &ndash; Sat: 8:00 AM &ndash; 7:00 PM</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom-inner">
+        <p class="footer-copyright">&copy; 2025 Stackly Logistics. All Rights Reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="404.html">Privacy Policy</a>
+          <a href="404.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,
+        mirror: false,
+        offset: 100
+      });
+
+      const loader = document.getElementById('page-loader');
+      if (loader) {
+        window.addEventListener('load', function() {
+          loader.classList.add('loaded');
+          setTimeout(function() {
+            loader.style.display = 'none';
+          }, 500);
+        });
+        setTimeout(function() {
+          if (loader && !loader.classList.contains('loaded')) {
+            loader.classList.add('loaded');
+            setTimeout(function() {
+              loader.style.display = 'none';
+            }, 500);
+          }
+        }, 3000);
+      }
+
+      const backToTop = document.getElementById('back-to-top');
+      if (backToTop) {
+        window.addEventListener('scroll', function() {
+          if (window.scrollY > 500) {
+            backToTop.classList.add('visible');
+          } else {
+            backToTop.classList.remove('visible');
+          }
+        });
+      }
+
+      const header = document.getElementById('main-header');
+      if (header) {
+        window.addEventListener('scroll', function() {
+          if (window.scrollY > 100) {
+            header.classList.add('sticky');
+          } else {
+            header.classList.remove('sticky');
+          }
+        });
+      }
+
+      // Hamburger menu toggle
+      const hamburger = document.getElementById('hamburger');
+      const navMenu = document.getElementById('nav-menu');
+      const navOverlay = document.querySelector('.nav-overlay');
+      if (hamburger && navMenu) {
+        hamburger.addEventListener('click', function() {
+          hamburger.classList.toggle('active');
+          navMenu.classList.toggle('active');
+          if (navOverlay) navOverlay.classList.toggle('active');
+          document.body.classList.toggle('mobile-open');
+        });
+        if (navOverlay) {
+          navOverlay.addEventListener('click', function() {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+            navOverlay.classList.remove('active');
+            document.body.classList.remove('mobile-open');
+          });
+        }
+        navMenu.querySelectorAll('a').forEach(function(link) {
+          link.addEventListener('click', function() {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+            if (navOverlay) navOverlay.classList.remove('active');
+            document.body.classList.remove('mobile-open');
+          });
+        });
+      }
+      // Mobile dropdown toggle
+      document.querySelectorAll('.has-dropdown').forEach(function(item) {
+        var trigger = item.querySelector(':scope > a');
+        if (trigger) {
+          trigger.addEventListener('click', function(e) {
+            if (window.innerWidth > 991) return;
+            e.preventDefault();
+            e.stopPropagation();
+            document.querySelectorAll('.has-dropdown').forEach(function(other) {
+              if (other !== item) other.classList.remove('active');
+            });
+            item.classList.toggle('active');
+          });
+        }
+      });
+
+      const faqItems = document.querySelectorAll('.faq-item');
+      faqItems.forEach(function(item) {
+        const question = item.querySelector('.faq-question');
+        if (question) {
+          question.addEventListener('click', function() {
+            const isActive = item.classList.contains('active');
+            faqItems.forEach(function(i) { i.classList.remove('active'); });
+            if (!isActive) {
+              item.classList.add('active');
+            }
+          });
+        }
+      });
+
+      const dropdowns = document.querySelectorAll('.has-dropdown, .has-mega-menu');
+      dropdowns.forEach(function(item) {
+        item.addEventListener('mouseenter', function() {
+          if (window.innerWidth > 992) {
+            this.classList.add('hovered');
+          }
+        });
+        item.addEventListener('mouseleave', function() {
+          if (window.innerWidth > 992) {
+            this.classList.remove('hovered');
+          }
+        });
+      });
+
+      document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+        anchor.addEventListener('click', function(e) {
+          const href = this.getAttribute('href');
+          if (href !== '#') {
+            const target = document.querySelector(href);
+            if (target) {
+              e.preventDefault();
+              target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          }
+        });
+      });
+    });
+  </script>
+  <script src="js/main.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/counter.js"></script>
+<script src="js/dark-mode.js"></script>
+</body>
+</html>

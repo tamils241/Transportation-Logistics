@@ -1,0 +1,25 @@
+# Robots.txt for Stackly Transportation & Logistics
+# https://www.stackly.com
+
+User-agent: *
+Allow: /
+Disallow: /admin-dashboard.html
+Disallow: /client-dashboard.html
+Disallow: /documentation/
+
+# Sitemaps
+Sitemap: https://www.stackly.com/sitemap.xml
+
+# Crawl-delay
+User-agent: *
+Crawl-delay: 1
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /

@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing | Stackly Transportation & Logistics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+  <link rel="stylesheet" href="css/alignments.css">
+</head>
+<body>
+
+<!-- PAGE LOADER -->
+<div id="page-loader" class="page-loader">
+  <div class="loader-content">
+    <div class="loader-truck"><i class="fas fa-truck"></i></div>
+    <div class="loader-bar"><span></span></div>
+    <p class="loader-text">Loading...</p>
+  </div>
+</div>
+
+<!-- BACK TO TOP -->
+<a href="#home" id="back-to-top" class="back-to-top" aria-label="Back to top">
+  <i class="fas fa-arrow-up"></i>
+</a>
+
+<!-- FLOATING CONTACT BUTTONS -->
+<div class="floating-contact">
+  <a href="404.html" class="floating-btn whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="tel:+1234567890" class="floating-btn call-btn" aria-label="Call us">
+    <i class="fas fa-phone"></i>
+  </a>
+  <a href="mailto:info@stackly.com" class="floating-btn email-btn" aria-label="Email us">
+    <i class="fas fa-envelope"></i>
+  </a>
+</div>
+
+<!-- HEADER TOP BAR -->
+<div class="top-bar" id="home">
+  <div class="container">
+    <div class="top-bar-inner">
+      <div class="top-bar-left">
+        <a href="tel:+1234567890" class="top-bar-item"><i class="fas fa-phone-alt"></i> +1 234 567 890</a>
+        <a href="mailto:info@stackly.com" class="top-bar-item"><i class="fas fa-envelope"></i> info@stackly.com</a>
+        <span class="top-bar-item"><i class="fas fa-clock"></i> Mon &ndash; Sat: 8:00 AM &ndash; 7:00 PM</span>
+      </div>
+      <div class="top-bar-right">
+        <div class="top-bar-socials">
+          <a href="404.html" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="404.html" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="404.html" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="404.html" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+        <button id="dark-mode-toggle-top" class="dark-mode-toggle" aria-label="Toggle dark mode">
+          <i class="fas fa-moon"></i><i class="fas fa-sun"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN HEADER / NAVIGATION -->
+<header class="main-header" id="main-header">
+  <div class="container">
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <img src="images/logo.webp" alt="Stackly Logo" class="logo-img">
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
+</header>
+<div class="nav-overlay"></div>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb-section bg-hero-pricing">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span><i class="fas fa-chevron-right"></i></span>
+                <span class="current">Pricing</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Pricing Intro -->
+    <section class="section-padding pricing-intro">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Pricing Plans</span>
+                <h1 class="section-title">Transparent, Affordable Pricing</h1>
+                <p class="section-desc">
+                    Choose the plan that fits your shipping needs. No hidden fees,
+                    no surprises, no long-term contracts. Scale up or down anytime
+                    as your business grows.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Toggle -->
+    <section class="pricing-toggle-section">
+        <div class="container">
+            <div class="pricing-toggle-wrapper">
+                <span class="toggle-label active" id="monthlyLabel">Monthly</span>
+                <label class="pricing-toggle">
+                    <input type="checkbox" id="pricingToggle">
+                    <span class="toggle-slider"></span>
+                </label>
+                <span class="toggle-label" id="yearlyLabel">Yearly</span>
+                <span class="save-badge">Save 20%</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Cards -->
+    <section class="section-padding pricing-cards-section">
+        <div class="container">
+            <div class="pricing-grid">
+
+                <!-- Starter Plan -->
+                <div class="pricing-card" data-aos="fade-up">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Starter</h3>
+                        <p class="plan-desc">
+                            Perfect for small businesses getting started
+                            with regular shipping needs.
+                        </p>
+                        <div class="plan-price">
+                            <span class="currency">$</span>
+                            <span class="amount monthly-price">299</span>
+                            <span class="amount yearly-price" style="display:none;">239</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                50 Shipments per month
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                Basic tracking dashboard
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                Email support (24hr response)
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                Standard vehicles
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                Domestic shipping coverage
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                Basic analytics reports
+                            </li>
+                            <li class="disabled">
+                                <i class="fas fa-times"></i>
+                                Warehouse access
+                            </li>
+                            <li class="disabled">
+                                <i class="fas fa-times"></i>
+                                Priority support
+                            </li>
+                            <li class="disabled">
+                                <i class="fas fa-times"></i>
+                                Dedicated account manager
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pricing-action">
+                        <a href="contact.html" class="btn btn-outline btn-block">
+                            Choose Starter
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Business Plan (Featured) -->
+                <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="100">
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Business</h3>
+                        <p class="plan-desc">
+                            Best for growing businesses with regular
+                            shipping needs and international reach.
+                        </p>
+                        <div class="plan-price">
+                            <span class="currency">$</span>
+                            <span class="amount monthly-price">599</span>
+                            <span class="amount yearly-price" style="display:none;">479</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                200 Shipments per month
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                Real-time GPS tracking
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                Priority support (4hr response)
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                All vehicle types available
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                Domestic + International shipping
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                Advanced analytics & reports
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                Warehouse access (500 sq ft)
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                API access for integrations
+                            </li>
+                            <li class="disabled">
+                                <i class="fas fa-times"></i>
+                                Dedicated account manager
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pricing-action">
+                        <a href="contact.html" class="btn btn-primary btn-block">
+                            Choose Business
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Enterprise</h3>
+                        <p class="plan-desc">
+                            For large operations requiring custom
+                            logistics solutions and dedicated support.
+                        </p>
+                        <div class="plan-price">
+                            <span class="currency">$</span>
+                            <span class="amount monthly-price">999</span>
+                            <span class="amount yearly-price" style="display:none;">799</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                Unlimited shipments
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                Advanced analytics & reports
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                24/7 phone & chat support
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                All vehicle types + special equipment
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                Global shipping network
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                Custom system integrations
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                Unlimited warehouse space
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                Dedicated account manager
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                Custom SLA & solutions
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pricing-action">
+                        <a href="contact.html" class="btn btn-outline btn-block">
+                            Contact Sales
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="section-padding comparison-table-section bg-white">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Detailed Comparison</span>
+                <h2 class="section-title">Feature Comparison Table</h2>
+                <p class="section-desc">
+                    Compare all features across our pricing plans side by side
+                    to find the perfect fit for your business.
+                </p>
+            </div>
+            <div class="table-responsive">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Starter</th>
+                            <th class="featured-col">Business</th>
+                            <th>Enterprise</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monthly Shipments</td>
+                            <td>50</td>
+                            <td class="featured-col">200</td>
+                            <td>Unlimited</td>
+                        </tr>
+                        <tr>
+                            <td>Overage Rate (per shipment)</td>
+                            <td>$8.50</td>
+                            <td class="featured-col">$6.00</td>
+                            <td>Custom</td>
+                        </tr>
+                        <tr>
+                            <td>Tracking Dashboard</td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                            <td class="featured-col"><i class="fas fa-check text-success"></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Real-Time GPS Tracking</td>
+                            <td><i class="fas fa-times text-danger"></i></td>
+                            <td class="featured-col"><i class="fas fa-check text-success"></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Vehicle Types</td>
+                            <td>Standard only</td>
+                            <td class="featured-col">All types</td>
+                            <td>All + Special</td>
+                        </tr>
+                        <tr>
+                            <td>Shipping Coverage</td>
+                            <td>Domestic</td>
+                            <td class="featured-col">Domestic + International</td>
+                            <td>Global Network</td>
+                        </tr>
+                        <tr>
+                            <td>Cargo Insurance</td>
+                            <td>$50K coverage</td>
+                            <td class="featured-col">$100K coverage</td>
+                            <td>Up to $5M</td>
+                        </tr>
+                        <tr>
+                            <td>Email Support</td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                            <td class="featured-col"><i class="fas fa-check text-success"></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Priority Support</td>
+                            <td><i class="fas fa-times text-danger"></i></td>
+                            <td class="featured-col"><i class="fas fa-check text-success"></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td>24/7 Phone Support</td>
+                            <td><i class="fas fa-times text-danger"></i></td>
+                            <td class="featured-col"><i class="fas fa-times text-danger"></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Analytics Dashboard</td>
+                            <td>Basic</td>
+                            <td class="featured-col">Advanced</td>
+                            <td>Advanced + Custom</td>
+                        </tr>
+                        <tr>
+                            <td>API Access</td>
+                            <td><i class="fas fa-times text-danger"></i></td>
+                            <td class="featured-col"><i class="fas fa-check text-success"></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Webhook Notifications</td>
+                            <td><i class="fas fa-times text-danger"></i></td>
+                            <td class="featured-col"><i class="fas fa-check text-success"></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Warehouse Access</td>
+                            <td><i class="fas fa-times text-danger"></i></td>
+                            <td class="featured-col">500 sq ft included</td>
+                            <td>Unlimited space</td>
+                        </tr>
+                        <tr>
+                            <td>Dedicated Account Manager</td>
+                            <td><i class="fas fa-times text-danger"></i></td>
+                            <td class="featured-col"><i class="fas fa-times text-danger"></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Custom Integrations</td>
+                            <td><i class="fas fa-times text-danger"></i></td>
+                            <td class="featured-col"><i class="fas fa-times text-danger"></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Custom SLA</td>
+                            <td><i class="fas fa-times text-danger"></i></td>
+                            <td class="featured-col"><i class="fas fa-times text-danger"></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Onboarding Support</td>
+                            <td>Self-serve guides</td>
+                            <td class="featured-col">Guided setup</td>
+                            <td>White-glove onboarding</td>
+                        </tr>
+                        <tr>
+                            <td>Quarterly Business Review</td>
+                            <td><i class="fas fa-times text-danger"></i></td>
+                            <td class="featured-col">Annual review</td>
+                            <td>Quarterly reviews</td>
+                        </tr>
+                        <tr>
+                            <td>Billing Options</td>
+                            <td>Card only</td>
+                            <td class="featured-col">Card, ACH, PayPal</td>
+                            <td>All + Invoice (NET 30/60)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enterprise Custom Plan CTA -->
+    <section class="section-padding enterprise-cta">
+        <div class="container">
+            <div class="enterprise-cta-wrapper">
+                <div class="enterprise-cta-icon">
+                    <i class="fas fa-building"></i>
+                </div>
+                <div class="enterprise-cta-content">
+                    <h2>Need a Custom Enterprise Plan?</h2>
+                    <p>
+                        Our Enterprise solutions are tailored to your specific
+                        business requirements. Get custom pricing, dedicated support,
+                        and bespoke logistics strategies designed for your operations.
+                    </p>
+                    <ul class="enterprise-benefits">
+                        <li>
+                            <i class="fas fa-check"></i>
+                            Volume-based custom pricing with guaranteed rates
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            Dedicated logistics consultants for strategy
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            Custom API & system integrations with your ERP
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            SLA guarantees with financial penalties
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            Quarterly business reviews and optimization
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            White-glove onboarding and training
+                        </li>
+                    </ul>
+                    <div class="enterprise-cta-buttons">
+                        <a href="contact.html" class="btn btn-primary btn-lg">
+                            Request Custom Quote
+                        </a>
+                        <a href="tel:+1234567890" class="btn btn-outline btn-lg">
+                            <i class="fas fa-phone"></i> Speak to Sales
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Indicators -->
+    <section class="section-padding trust-section bg-white">
+        <div class="container">
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <div class="trust-icon">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <h4>Secure Payments</h4>
+                    <p>PCI DSS Level 1 compliant payment processing for all transactions.</p>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h4>No Long-Term Contracts</h4>
+                    <p>Month-to-month billing. Cancel or change plans anytime without fees.</p>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">
+                        <i class="fas fa-undo"></i>
+                    </div>
+                    <h4>Money-Back Guarantee</h4>
+                    <p>Not satisfied within 30 days? Get a full refund, no questions asked.</p>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h4>Expert Support</h4>
+                    <p>Logistics experts available to help you choose and optimize your plan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Pricing -->
+    <section class="section-padding faq-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Pricing FAQ</span>
+                <h2 class="section-title">Pricing Questions</h2>
+                <p class="section-desc">
+                    Common questions about our pricing plans and billing.
+                </p>
+            </div>
+            <div class="faq-wrapper">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How is the pricing calculated for each plan?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Our pricing is based on a monthly subscription that covers
+                            a set number of shipments per plan tier. The Starter plan
+                            covers up to 50 shipments, Business up to 200, and Enterprise
+                            offers unlimited shipments. Additional shipments beyond the
+                            plan limit are billed at discounted per-shipment rates. Exact
+                            pricing considers shipment volume, distance, cargo type, and
+                            any special handling requirements.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What payment methods do you accept?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            We accept all major credit and debit cards (Visa, MasterCard,
+                            American Express, Discover), ACH bank transfers, wire transfers,
+                            and PayPal. Enterprise clients can also set up invoice-based
+                            billing with NET 30 or NET 60 terms. All payments are processed
+                            securely through our PCI DSS Level 1 compliant payment gateway.
+                            You can manage your payment methods through your account dashboard.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Are there volume discounts for high-volume shippers?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Yes! We offer significant volume discounts for businesses
+                            shipping more than 500 shipments per month. Discounts start
+                            at 5% for 100+ monthly shipments and scale up to 25% for
+                            1,000+ monthly shipments. The yearly billing option saves
+                            you an additional 20% on all plans. Enterprise clients
+                            receive custom volume-based pricing tailored to their specific
+                            shipping patterns and business needs.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What is your refund and cancellation policy?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            You can cancel your subscription at any time with no
+                            cancellation fees. Monthly plans remain active until the
+                            end of the current billing period. Yearly plans receive a
+                            prorated refund for unused months. Individual shipment
+                            refunds are available for cancelled or undelivered shipments
+                            within 48 hours of the scheduled delivery date. Service
+                            credits are issued for any SLA violations on Business and
+                            Enterprise plans.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Start Shipping Smarter Today</h2>
+                <p>
+                    Choose the plan that fits your business and start experiencing
+                    the Stackly difference. No long-term contracts required. Upgrade
+                    or downgrade anytime as your needs change.
+                </p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-lg">
+                        Get Started Free
+                    </a>
+                    <a href="tel:+1234567890" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-phone"></i> Talk to Sales
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section section-padding">
+        <div class="container">
+            <div class="newsletter-wrapper">
+                <div class="newsletter-content">
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <p>
+                        Get the latest logistics insights, industry news, and
+                        exclusive offers delivered to your inbox.
+                    </p>
+                </div>
+                <form class="newsletter-form">
+                    <input
+                        type="email"
+                        placeholder="Enter your email address"
+                        required
+                    >
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+<!-- FOOTER -->
+<footer class="footer-section" id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col footer-brand">
+        <a href="index.html" class="footer-logo">
+          <img src="images/logo.webp" alt="Stackly Logo" class="logo-img">
+        </a>
+        <p class="footer-desc">Stackly Logistics is a premier transportation and logistics company delivering excellence across the globe. With 15+ years of experience and a modern fleet, we are your trusted supply chain partner.</p>
+        <div class="footer-socials">
+          <a href="404.html" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="404.html" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="404.html" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="404.html" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="404.html" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Our Services</h4>
+        <ul class="footer-links">
+          <li><a href="road-freight.html">Road Freight</a></li>
+          <li><a href="air-freight.html">Air Freight</a></li>
+          <li><a href="warehousing.html">Warehousing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Support</h4>
+        <ul class="footer-links">
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact Support</a></li>
+          <li><a href="404.html">Terms of Service</a></li>
+          <li><a href="404.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Contact Info</h4>
+        <ul class="footer-contact">
+          <li><i class="fas fa-map-marker-alt"></i> 123 Logistics Ave, Suite 100, New York, NY 10001</li>
+          <li><i class="fas fa-phone-alt"></i> <a href="tel:+1234567890">+1 234 567 890</a></li>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:info@stackly.com">info@stackly.com</a></li>
+          <li><i class="fas fa-clock"></i> Mon &ndash; Sat: 8:00 AM &ndash; 7:00 PM</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom-inner">
+        <p class="footer-copyright">&copy; 2025 Stackly Logistics. All Rights Reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="404.html">Privacy Policy</a>
+          <a href="404.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="js/main.js"></script>
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const navMenu = document.getElementById('nav-menu');
+      const navOverlay = document.querySelector('.nav-overlay');
+      if (hamburger && navMenu) {
+        hamburger.addEventListener('click', function() {
+          hamburger.classList.toggle('active');
+          navMenu.classList.toggle('active');
+          if (navOverlay) navOverlay.classList.toggle('active');
+          document.body.classList.toggle('mobile-open');
+        });
+        if (navOverlay) {
+          navOverlay.addEventListener('click', function() {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+            navOverlay.classList.remove('active');
+            document.body.classList.remove('mobile-open');
+          });
+        }
+        navMenu.querySelectorAll('a').forEach(function(link) {
+          link.addEventListener('click', function() {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+            if (navOverlay) navOverlay.classList.remove('active');
+            document.body.classList.remove('mobile-open');
+          });
+        });
+      }
+      // Mobile dropdown toggle
+      document.querySelectorAll('.has-dropdown').forEach(function(item) {
+        var trigger = item.querySelector(':scope > a');
+        if (trigger) {
+          trigger.addEventListener('click', function(e) {
+            if (window.innerWidth > 991) return;
+            e.preventDefault();
+            e.stopPropagation();
+            document.querySelectorAll('.has-dropdown').forEach(function(other) {
+              if (other !== item) other.classList.remove('active');
+            });
+            item.classList.toggle('active');
+          });
+        }
+      });
+    </script>
+    <script src="js/counter.js"></script>
+    <script src="js/faq.js"></script>
+    <script src="js/dark-mode.js"></script>
+    <script>
+        // Pricing Toggle Logic
+        const pricingToggle = document.getElementById('pricingToggle');
+        const monthlyPrices = document.querySelectorAll('.monthly-price');
+        const yearlyPrices = document.querySelectorAll('.yearly-price');
+        const monthlyLabel = document.getElementById('monthlyLabel');
+        const yearlyLabel = document.getElementById('yearlyLabel');
+
+        if (pricingToggle) {
+            pricingToggle.addEventListener('change', function () {
+                if (this.checked) {
+                    monthlyPrices.forEach(function (p) {
+                        p.style.display = 'none';
+                    });
+                    yearlyPrices.forEach(function (p) {
+                        p.style.display = 'inline';
+                    });
+                    monthlyLabel.classList.remove('active');
+                    yearlyLabel.classList.add('active');
+                } else {
+                    monthlyPrices.forEach(function (p) {
+                        p.style.display = 'inline';
+                    });
+                    yearlyPrices.forEach(function (p) {
+                        p.style.display = 'none';
+                    });
+                    monthlyLabel.classList.add('active');
+                    yearlyLabel.classList.remove('active');
+                }
+            });
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                var target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
