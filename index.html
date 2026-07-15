@@ -15,10 +15,9 @@
   <meta name="twitter:title" content="Stackly Transportation &amp; Logistics">
   <meta name="twitter:description" content="Premium global freight and logistics solutions.">
   <link rel="canonical" href="https://stackly.com">  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" crossorigin="anonymous" referrerpolicy="no-referrer">
 
   <meta name="theme-color" content="#f5510b">
   <meta name="robots" content="index, follow">
@@ -140,7 +139,6 @@
     </nav>
   </div>
 </header>
-<div class="nav-overlay"></div>
 
 <main>
 
@@ -1273,15 +1271,6 @@
         </ul>
       </div>
       <div class="footer-col">
-        <h4 class="footer-heading">Support</h4>
-        <ul class="footer-links">
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="contact.html">Contact Support</a></li>
-          <li><a href="404.html">Terms of Service</a></li>
-          <li><a href="404.html">Privacy Policy</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
         <h4 class="footer-heading">Contact Info</h4>
         <ul class="footer-contact">
           <li><i class="fas fa-map-marker-alt"></i> 123 Logistics Ave, New York, NY</li>
@@ -1301,7 +1290,7 @@
 </footer>
 
 <!-- SCRIPTS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>
     // Initialize AOS animations
     document.addEventListener('DOMContentLoaded', function() {
@@ -1362,7 +1351,6 @@
       // Hamburger menu toggle
       const hamburger = document.getElementById('hamburger');
       const navMenu = document.getElementById('nav-menu');
-      const navOverlay = document.querySelector('.nav-overlay');
       if (hamburger && navMenu) {
         function closeDropdown(item) {
           const trigger = item.querySelector('.nav-link');
@@ -1461,21 +1449,6 @@
           }
         });
       }
-      // Mobile dropdown toggle
-      document.querySelectorAll('.has-dropdown').forEach(function(item) {
-        var trigger = item.querySelector(':scope > a');
-        if (trigger) {
-          trigger.addEventListener('click', function(e) {
-            if (window.innerWidth > 991) return;
-            e.preventDefault();
-            e.stopPropagation();
-            document.querySelectorAll('.has-dropdown').forEach(function(other) {
-              if (other !== item) other.classList.remove('active');
-            });
-            item.classList.toggle('active');
-          });
-        }
-      });
 
       // FAQ accordion
       const faqItems = document.querySelectorAll('.faq-item');

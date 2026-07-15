@@ -48,16 +48,16 @@
   // ─── 2. Sticky Header ───────────────────────────────────────────────────────
 
   function stickyHeader() {
-    const header = document.querySelector(".main-header");
+    const header = document.querySelector(".header");
     if (!header) return;
 
     var scrollThreshold = 50;
 
     function handleScroll() {
       if (window.scrollY > scrollThreshold) {
-        header.classList.add("sticky");
+        header.classList.add("scrolled");
       } else {
-        header.classList.remove("sticky");
+        header.classList.remove("scrolled");
       }
     }
 
@@ -68,9 +68,8 @@
   // ─── 3. Mobile Navigation ───────────────────────────────────────────────────
 
   function mobileNavigation() {
-    var toggle = document.querySelector(".hamburger");
+    var toggle = document.querySelector(".mobile-toggle");
     var navMenu = document.querySelector(".nav-menu");
-    var overlay = document.querySelector(".nav-overlay");
     if (!toggle || !navMenu) return;
 
     toggle.addEventListener("click", function (e) {
@@ -79,19 +78,8 @@
 
       toggle.classList.toggle("active");
       navMenu.classList.toggle("active");
-      if (overlay) overlay.classList.toggle("active");
       document.body.classList.toggle("mobile-open");
     });
-
-    // Close on overlay click
-    if (overlay) {
-      overlay.addEventListener("click", function () {
-        toggle.classList.remove("active");
-        navMenu.classList.remove("active");
-        overlay.classList.remove("active");
-        document.body.classList.remove("mobile-open");
-      });
-    }
 
     // Close menu when a nav link is clicked
     var navLinks = navMenu.querySelectorAll("a");
@@ -99,7 +87,6 @@
       link.addEventListener("click", function () {
         toggle.classList.remove("active");
         navMenu.classList.remove("active");
-        if (overlay) overlay.classList.remove("active");
         document.body.classList.remove("mobile-open");
       });
     });
@@ -113,7 +100,6 @@
       ) {
         toggle.classList.remove("active");
         navMenu.classList.remove("active");
-        if (overlay) overlay.classList.remove("active");
         document.body.classList.remove("mobile-open");
       }
     });
@@ -122,11 +108,11 @@
   // ─── 4. Dropdown Navigation ─────────────────────────────────────────────────
 
   function dropdownNavigation() {
-    var dropdownItems = document.querySelectorAll(".has-dropdown");
-    if (!dropdownItems.length) return;
+    var dropdowns = document.querySelectorAll(".nav-dropdown");
+    if (!dropdowns.length) return;
 
-    dropdownItems.forEach(function (item) {
-      var trigger = item.querySelector(":scope > a");
+    dropdowns.forEach(function (dropdown) {
+      var trigger = dropdown.querySelector("a");
       if (!trigger) return;
 
       trigger.addEventListener("click", function (e) {
@@ -137,21 +123,21 @@
         e.stopPropagation();
 
         // Close other open dropdowns
-        dropdownItems.forEach(function (other) {
-          if (other !== item && other.classList.contains("active")) {
+        dropdowns.forEach(function (other) {
+          if (other !== dropdown && other.classList.contains("active")) {
             other.classList.remove("active");
           }
         });
 
-        item.classList.toggle("active");
+        dropdown.classList.toggle("active");
       });
     });
 
     // Close dropdowns when clicking outside
     document.addEventListener("click", function (e) {
-      if (!e.target.closest(".has-dropdown")) {
-        dropdownItems.forEach(function (item) {
-          item.classList.remove("active");
+      if (!e.target.closest(".nav-dropdown")) {
+        dropdowns.forEach(function (dropdown) {
+          dropdown.classList.remove("active");
         });
       }
     });

@@ -14,7 +14,7 @@
     <title>Freight Forwarding | Stackly Transportation & Logistics</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -66,6 +66,64 @@
         img { max-width: 100%; height: auto; }
         .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
 
+        /* ===== HEADER TOP BAR ===== */
+        .header-top {
+            background: var(--secondary);
+            color: rgba(255,255,255,0.85);
+            padding: 8px 0;
+            font-size: 0.85rem;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .header-top .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .header-top-left {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+        .header-top-left a {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: rgba(255,255,255,0.85);
+        }
+        .header-top-left a:hover { color: var(--primary); }
+        .header-top-right {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        .header-top-social {
+            display: flex;
+            gap: 12px;
+        }
+        .header-top-social a {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9rem;
+        }
+        .header-top-social a:hover { color: var(--primary); transform: translateY(-1px); }
+
+
+        /* ===== MAIN HEADER ===== */
+        .main-header {
+            background: var(--white);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+        .main-header.scrolled {
+            box-shadow: var(--shadow-md);
+            padding: 10px 0;
+        }
         .header-container {
             display: flex;
             justify-content: space-between;
@@ -98,6 +156,11 @@
             text-transform: uppercase;
             letter-spacing: 1.5px;
             font-weight: 500;
+        }
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 32px;
         }
         .nav-menu a {
             font-family: 'Poppins', sans-serif;
@@ -139,6 +202,14 @@
         .header-cta:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 25px rgba(245, 158, 11,0.5);
+        }
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--secondary);
+            cursor: pointer;
         }
 
         /* ===== HERO SECTION ===== */
@@ -1707,8 +1778,6 @@
 
         [data-aos] { transition: all 0.6s ease; }
 
-<<<<<<< HEAD
-=======
         /* Mobile */
         @media (max-width: 575px) {
             .hero .container { grid-template-columns: 1fr; text-align: center; }
@@ -1838,7 +1907,6 @@
         @media (min-width: 1400px) {
             .footer-grid { grid-template-columns: repeat(5, 1fr); }
         }
->>>>>>> b064112 (completed)
     </style>
 </head>
 <body>
@@ -1904,10 +1972,7 @@
           <button class="hamburger" id="hamburger" aria-label="Toggle menu">
             <span></span><span></span><span></span>
           </button>
-        </nav>
-      </div>
-    </header>
-    <ul class="nav-menu" id="nav-menu">
+          <ul class="nav-menu" id="nav-menu">
         <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
             <li class="nav-item has-dropdown">
               <a href="#" class="nav-link">About <i class="fas fa-chevron-down"></i></a>
@@ -1931,8 +1996,9 @@
             <li class="nav-item"><a href="login.html" class="nav-link">Sign In</a></li>
             <li class="nav-item"><a href="register.html" class="btn btn-primary nav-cta">Sign Up</a></li>
           </ul>
-
-    <div class="nav-overlay"></div>
+        </nav>
+      </div>
+    </header>
 
     <!-- HERO SECTION -->
     <section class="service-page-hero" id="hero">
@@ -2727,7 +2793,7 @@
 </footer>
 
 <!-- SCRIPTS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       AOS.init({
@@ -2778,49 +2844,14 @@
         });
       }
 
-      // Hamburger menu toggle
       const hamburger = document.getElementById('hamburger');
       const navMenu = document.getElementById('nav-menu');
-      const navOverlay = document.querySelector('.nav-overlay');
       if (hamburger && navMenu) {
         hamburger.addEventListener('click', function() {
           hamburger.classList.toggle('active');
           navMenu.classList.toggle('active');
-          if (navOverlay) navOverlay.classList.toggle('active');
-          document.body.classList.toggle('mobile-open');
-        });
-        if (navOverlay) {
-          navOverlay.addEventListener('click', function() {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
-            navOverlay.classList.remove('active');
-            document.body.classList.remove('mobile-open');
-          });
-        }
-        navMenu.querySelectorAll('a').forEach(function(link) {
-          link.addEventListener('click', function() {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
-            if (navOverlay) navOverlay.classList.remove('active');
-            document.body.classList.remove('mobile-open');
-          });
         });
       }
-      // Mobile dropdown toggle
-      document.querySelectorAll('.has-dropdown').forEach(function(item) {
-        var trigger = item.querySelector(':scope > a');
-        if (trigger) {
-          trigger.addEventListener('click', function(e) {
-            if (window.innerWidth > 991) return;
-            e.preventDefault();
-            e.stopPropagation();
-            document.querySelectorAll('.has-dropdown').forEach(function(other) {
-              if (other !== item) other.classList.remove('active');
-            });
-            item.classList.toggle('active');
-          });
-        }
-      });
 
       const faqItems = document.querySelectorAll('.faq-item');
       faqItems.forEach(function(item) {

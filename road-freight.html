@@ -15,9 +15,9 @@
   <meta name="twitter:title" content="Stackly Transportation &amp; Logistics">
   <meta name="twitter:description" content="Premium global freight and logistics solutions.">
   <link rel="canonical" href="https://stackly.com">  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" crossorigin="anonymous" referrerpolicy="no-referrer">
 
   <meta name="theme-color" content="#F59E0B">
   <meta name="robots" content="index, follow">
@@ -124,34 +124,33 @@
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item has-dropdown">
+          <a href="#" class="nav-link">About <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="about.html" class="dropdown-link">About Us</a></li>
+            <li><a href="team.html" class="dropdown-link">Our Team</a></li>            <li><a href="faq.html" class="dropdown-link">FAQ</a></li>
+          </ul>
+        </li>
+        <li class="nav-item has-dropdown active">
+
+          <a href="#" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="road-freight.html" class="dropdown-link">Road Freight</a></li>
+            <li><a href="air-freight.html" class="dropdown-link">Air Freight</a></li>
+            <li><a href="warehousing.html" class="dropdown-link">Warehousing</a></li>          </ul>
+        </li>
+        <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+        <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+        <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        <li class="nav-item"><a href="login.html" class="nav-link">Sign In</a></li>
+        <li class="nav-item"><a href="register.html" class="btn btn-primary nav-cta">Sign Up</a></li>
+      </ul>
     </nav>
   </div>
 </header>
-<ul class="nav-menu" id="nav-menu">
-  <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-  <li class="nav-item has-dropdown">
-    <a href="#" class="nav-link">About <i class="fas fa-chevron-down"></i></a>
-    <ul class="dropdown">
-      <li><a href="about.html" class="dropdown-link">About Us</a></li>
-      <li><a href="team.html" class="dropdown-link">Our Team</a></li>            <li><a href="faq.html" class="dropdown-link">FAQ</a></li>
-    </ul>
-  </li>
-  <li class="nav-item has-dropdown active">
-
-    <a href="#" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
-    <ul class="dropdown">
-      <li><a href="road-freight.html" class="dropdown-link">Road Freight</a></li>
-      <li><a href="air-freight.html" class="dropdown-link">Air Freight</a></li>
-      <li><a href="warehousing.html" class="dropdown-link">Warehousing</a></li>          </ul>
-  </li>
-  <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-  <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
-  <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-  <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-  <li class="nav-item"><a href="login.html" class="nav-link">Sign In</a></li>
-  <li class="nav-item"><a href="register.html" class="btn btn-primary nav-cta">Sign Up</a></li>
-</ul>
-<div class="nav-overlay"></div>
 
 <main>
 
@@ -1281,7 +1280,7 @@
 </footer>
 
 <!-- SCRIPTS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>
     // Initialize AOS animations
     document.addEventListener('DOMContentLoaded', function() {
@@ -1340,47 +1339,12 @@
       // Hamburger menu toggle
       const hamburger = document.getElementById('hamburger');
       const navMenu = document.getElementById('nav-menu');
-      const navOverlay = document.querySelector('.nav-overlay');
       if (hamburger && navMenu) {
         hamburger.addEventListener('click', function() {
           hamburger.classList.toggle('active');
           navMenu.classList.toggle('active');
-          if (navOverlay) navOverlay.classList.toggle('active');
-          document.body.classList.toggle('mobile-open');
-        });
-        if (navOverlay) {
-          navOverlay.addEventListener('click', function() {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
-            navOverlay.classList.remove('active');
-            document.body.classList.remove('mobile-open');
-          });
-        }
-        // Close menu on nav link click
-        navMenu.querySelectorAll('a').forEach(function(link) {
-          link.addEventListener('click', function() {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
-            if (navOverlay) navOverlay.classList.remove('active');
-            document.body.classList.remove('mobile-open');
-          });
         });
       }
-      // Mobile dropdown toggle
-      document.querySelectorAll('.has-dropdown').forEach(function(item) {
-        var trigger = item.querySelector(':scope > a');
-        if (trigger) {
-          trigger.addEventListener('click', function(e) {
-            if (window.innerWidth > 991) return;
-            e.preventDefault();
-            e.stopPropagation();
-            document.querySelectorAll('.has-dropdown').forEach(function(other) {
-              if (other !== item) other.classList.remove('active');
-            });
-            item.classList.toggle('active');
-          });
-        }
-      });
 
 
 

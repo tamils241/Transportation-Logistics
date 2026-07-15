@@ -178,7 +178,7 @@
     padding: 80px 30px 30px;
     box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
     transition: right 0.35s ease;
-    z-index: 10001;
+    z-index: 1000;
     overflow-y: auto;
   }
 
@@ -187,8 +187,7 @@
   }
 
   .nav-dropdown,
-  .mega-menu,
-  .dropdown {
+  .mega-menu {
     position: static;
     box-shadow: none;
     border-radius: 0;
@@ -200,27 +199,24 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
-    border: none;
-    background: #F8F9FA;
   }
 
   .nav-dropdown.active,
-  .mega-menu.active,
-  .has-dropdown.active > .dropdown {
+  .mega-menu.active {
     max-height: 600px;
   }
 
-  .hamburger {
+  .mobile-toggle {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 44px;
     height: 44px;
     cursor: pointer;
-    z-index: 10002;
+    z-index: 1001;
   }
 
-  .hamburger span {
+  .mobile-toggle span {
     display: block;
     width: 24px;
     height: 2px;
@@ -229,15 +225,15 @@
     transition: all 0.3s ease;
   }
 
-  .hamburger.active span:nth-child(1) {
+  .mobile-toggle.active span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
   }
 
-  .hamburger.active span:nth-child(2) {
+  .mobile-toggle.active span:nth-child(2) {
     opacity: 0;
   }
 
-  .hamburger.active span:nth-child(3) {
+  .mobile-toggle.active span:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
   }
 

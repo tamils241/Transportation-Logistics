@@ -9,9 +9,9 @@
   <meta name="robots" content="noindex, nofollow">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/animations.css">
@@ -104,13 +104,10 @@
     .auth-form input:focus + i,
     .auth-form .input-wrapper:focus-within i { color: #F59E0B; }
     .auth-form input::placeholder { color: #bbb; }
-<<<<<<< HEAD
-=======
     .auth-form .password-input { padding-right: 48px !important; }
     .password-toggle { position: absolute; top: 50%; right: 7px; transform: translateY(-50%); z-index: 3; display: grid; place-items: center; width: 38px; height: 38px; padding: 0; border: 0; border-radius: 8px; background: transparent; color: #94A3B8; cursor: pointer; transition: color 0.25s ease, background 0.25s ease; }
     .password-toggle:hover { color: #F59E0B; background: rgba(245,158,11,0.09); }
     .auth-form .input-wrapper .password-toggle i { position: static; left: auto; top: auto; transform: none; color: inherit; font-size: 15px; }
->>>>>>> b064112 (completed)
 
     /* Password Strength Indicator */
     .password-strength { margin-top: 8px; }
@@ -253,28 +250,6 @@
         <p>Fill in your details to get started with Stackly</p>
       </div>
 
-<<<<<<< HEAD
-      <!-- Social Signup -->
-      <div class="auth-social-buttons">
-        <button type="button" class="auth-social-btn google" onclick="window.location.href='404.html'">
-          <i class="fab fa-google"></i>
-          <span>Google</span>
-        </button>
-        <button type="button" class="auth-social-btn facebook" onclick="window.location.href='404.html'">
-          <i class="fab fa-facebook-f"></i>
-          <span>Facebook</span>
-        </button>
-      </div>
-
-      <!-- Divider -->
-      <div class="auth-divider">
-        <div class="auth-divider-line"></div>
-        <span class="auth-divider-text">or sign up with email</span>
-        <div class="auth-divider-line"></div>
-      </div>
-
-=======
->>>>>>> b064112 (completed)
       <!-- Register Form -->
       <form class="auth-form" id="registerForm" action="#" method="post" novalidate>
         <!-- Role -->
@@ -315,7 +290,7 @@
           <div class="form-group" id="phoneGroup">
             <label for="reg-phone">Phone Number <span style="color:#DC2626;">*</span></label>
             <div class="input-wrapper">
-              <input type="tel" id="reg-phone" name="phone" placeholder="1234567890" required autocomplete="tel" maxlength="10" oninput="this.value=this.value.replace(/[^0-9]/g,'').substring(0,10)">
+              <input type="tel" id="reg-phone" name="phone" placeholder="+1 234 567 890" required autocomplete="tel">
               <i class="fas fa-phone-alt"></i>
             </div>
             <div class="form-error" id="phoneError">Please enter a valid phone number.</div>
@@ -336,10 +311,7 @@
           <div class="input-wrapper">
             <input type="password" class="password-input" id="reg-password" name="password" placeholder="Create a strong password" required autocomplete="new-password" minlength="8">
             <i class="fas fa-lock"></i>
-<<<<<<< HEAD
-=======
             <button type="button" class="password-toggle" data-toggle-password="#reg-password" aria-label="Show password"><i class="fas fa-eye"></i></button>
->>>>>>> b064112 (completed)
           </div>
           <div class="password-strength" id="passwordStrength">
             <div class="strength-bar-wrapper">
@@ -350,7 +322,7 @@
             </div>
             <span class="strength-text" id="strengthText"></span>
           </div>
-          <div class="form-error" id="regPasswordError">Must include uppercase, lowercase, number & symbol (min 8 chars).</div>
+          <div class="form-error" id="regPasswordError">Password must be at least 8 characters.</div>
         </div>
 
         <!-- Confirm Password -->
@@ -359,10 +331,7 @@
           <div class="input-wrapper">
             <input type="password" class="password-input" id="reg-confirm" name="confirm_password" placeholder="Re-enter your password" required autocomplete="new-password" minlength="8">
             <i class="fas fa-lock"></i>
-<<<<<<< HEAD
-=======
             <button type="button" class="password-toggle" data-toggle-password="#reg-confirm" aria-label="Show confirm password"><i class="fas fa-eye"></i></button>
->>>>>>> b064112 (completed)
           </div>
           <div class="form-error" id="confirmError">Passwords do not match.</div>
         </div>
@@ -399,13 +368,6 @@
       <div class="auth-footer-link">
         Already have an account? <a href="login.html">Sign In</a>
       </div>
-<<<<<<< HEAD
-      <div class="auth-footer-link" style="margin-top:12px;">
-        <a href="index.html"><i class="fas fa-arrow-left"></i> Back to Home</a>
-      </div>
-
-=======
->>>>>>> b064112 (completed)
     </div>
   </div>
 
@@ -539,37 +501,14 @@
         var confirm = confirmInput.value;
         var terms = document.getElementById('agreeTerms').checked;
         var role = document.getElementById('reg-role').value;
-<<<<<<< HEAD
-
-        function isStrongPassword(pw) {
-          if (pw.length < 8) return false;
-          if (!/[A-Z]/.test(pw)) return false;
-          if (!/[a-z]/.test(pw)) return false;
-          if (!/[0-9]/.test(pw)) return false;
-          if (!/[^A-Za-z0-9]/.test(pw)) return false;
-          return true;
-        }
-=======
->>>>>>> b064112 (completed)
 
         showError('nameGroup', !name);
         showError('phoneGroup', !phone || !validatePhone(phone));
         showError('regEmailGroup', !email || !validateEmail(email));
-        showError('regPasswordGroup', !pass || !isStrongPassword(pass));
+        showError('regPasswordGroup', !pass || pass.length < 8);
         showError('confirmGroup', !confirm || confirm !== pass);
         showError('termsError', !terms);
         showError('roleGroup', !role);
-<<<<<<< HEAD
-
-        if (pass && !isStrongPassword(pass)) {
-          alert('Password must be strong:\n- At least 8 characters\n- Uppercase letter\n- Lowercase letter\n- Number\n- Special character (!@#$%^&* etc.)');
-        }
-
-        if (confirm && pass && confirm !== pass) {
-          alert('Passwords do not match. Please re-enter.');
-        }
-=======
->>>>>>> b064112 (completed)
 
         var termsError = document.getElementById('termsError');
         if (!terms) { termsError.style.display = 'block'; } else { termsError.style.display = 'none'; }
@@ -590,8 +529,8 @@
           btn.style.backgroundColor = '#059669';
           setTimeout(function() {
             window.location.href = 'login.html';
-          }, 800);
-        }, 1200);
+          }, 1200);
+        }, 2000);
       });
     }
   });

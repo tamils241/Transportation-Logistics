@@ -9,9 +9,9 @@
   <meta name="robots" content="noindex, nofollow">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/animations.css">
@@ -107,13 +107,10 @@
     .auth-form input:focus + i,
     .auth-form .input-wrapper:focus-within i { color: #F59E0B; }
     .auth-form input::placeholder { color: #bbb; }
-<<<<<<< HEAD
-=======
     .auth-form .password-input { padding-right: 48px !important; }
     .password-toggle { position: absolute; top: 50%; right: 7px; transform: translateY(-50%); z-index: 3; display: grid; place-items: center; width: 38px; height: 38px; padding: 0; border: 0; border-radius: 8px; background: transparent; color: #94A3B8; cursor: pointer; transition: color 0.25s ease, background 0.25s ease; }
     .password-toggle:hover { color: #F59E0B; background: rgba(245,158,11,0.09); }
     .auth-form .input-wrapper .password-toggle i { position: static; left: auto; top: auto; transform: none; color: inherit; font-size: 15px; }
->>>>>>> b064112 (completed)
 
     /* Form Options Row */
     .auth-form-options { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; }
@@ -260,32 +257,6 @@
         <p>Enter your credentials to access your account</p>
       </div>
 
-<<<<<<< HEAD
-      <!-- Social Login -->
-      <div class="auth-social-buttons">
-        <button type="button" class="auth-social-btn google" onclick="window.location.href='404.html'">
-          <i class="fab fa-google"></i>
-          <span>Google</span>
-        </button>
-        <button type="button" class="auth-social-btn facebook" onclick="window.location.href='404.html'">
-          <i class="fab fa-facebook-f"></i>
-          <span>Facebook</span>
-        </button>
-      </div>
-
-      <!-- Divider -->
-      <div class="auth-divider">
-        <div class="auth-divider-line"></div>
-        <span class="auth-divider-text">or sign in with email</span>
-        <div class="auth-divider-line"></div>
-      </div>
-
-      <p class="auth-info-note">
-        By signing in, you agree to our Terms of Service and Privacy Policy.
-      </p>
-
-=======
->>>>>>> b064112 (completed)
       <!-- Login Form -->
       <form class="auth-form" id="loginForm" action="#" method="post" novalidate>
         <div class="form-group" id="roleGroup">
@@ -298,10 +269,7 @@
             </select>
             <i class="fas fa-user-shield"></i>
           </div>
-<<<<<<< HEAD
-=======
           <div class="form-error">Please select a role.</div>
->>>>>>> b064112 (completed)
         </div>
 
         <div class="form-group" id="emailGroup">
@@ -318,10 +286,7 @@
           <div class="input-wrapper">
             <input type="password" class="password-input" id="login-password" name="password" placeholder="Enter your password" required autocomplete="current-password" minlength="8">
             <i class="fas fa-lock"></i>
-<<<<<<< HEAD
-=======
             <button type="button" class="password-toggle" data-toggle-password="#login-password" aria-label="Show password"><i class="fas fa-eye"></i></button>
->>>>>>> b064112 (completed)
           </div>
           <div class="password-strength" id="passwordStrength">
             <div class="strength-bar-wrapper">
@@ -373,13 +338,6 @@
       <div class="auth-footer-link">
         Don&rsquo;t have an account? <a href="register.html">Sign Up</a>
       </div>
-<<<<<<< HEAD
-      <div class="auth-footer-link" style="margin-top:12px;">
-        <a href="index.html"><i class="fas fa-arrow-left"></i> Back to Home</a>
-      </div>
-
-=======
->>>>>>> b064112 (completed)
     </div>
   </div>
 
@@ -403,8 +361,6 @@
       }, 3000);
     }
 
-<<<<<<< HEAD
-=======
     // Password Show/Hide Toggle
     var rememberMe = document.getElementById('rememberMe');
     if (rememberMe) {
@@ -415,7 +371,6 @@
       });
     }
 
->>>>>>> b064112 (completed)
     // Form Validation
     var loginForm = document.getElementById('loginForm');
     var emailInput = document.getElementById('login-email');
@@ -428,10 +383,7 @@
     var str4 = document.getElementById('str4');
     var strengthText = document.getElementById('strengthText');
     var bars = [str1, str2, str3, str4];
-<<<<<<< HEAD
-=======
     var loginBtn = document.getElementById('loginSubmit');
->>>>>>> b064112 (completed)
 
     function validateEmail(email) {
       return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
@@ -505,13 +457,6 @@
       });
     }
 
-    var roleInput = document.getElementById('login-role');
-    if (roleInput) {
-      roleInput.addEventListener('change', function() {
-        if (this.value) showError(document.getElementById('roleGroup'), false);
-      });
-    }
-
     if (passInput) {
       passInput.addEventListener('blur', function() {
         showError(passGroup, this.value && this.value.length < 8);
@@ -538,16 +483,7 @@
         showError(passGroup, !pass || pass.length < 8);
         showError(document.getElementById('roleGroup'), !role);
 
-<<<<<<< HEAD
-        var rememberChecked = document.getElementById('rememberMe').checked;
-        if (!rememberChecked) {
-          alert('Please check "Remember Me" to continue.');
-        }
-
-        if (emailGroup.classList.contains('has-error') || passGroup.classList.contains('has-error') || document.getElementById('roleGroup').classList.contains('has-error') || !rememberChecked) {
-=======
         if (emailGroup.classList.contains('has-error') || passGroup.classList.contains('has-error') || document.getElementById('roleGroup').classList.contains('has-error')) {
->>>>>>> b064112 (completed)
           valid = false;
         }
 

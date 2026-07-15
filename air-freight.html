@@ -11,7 +11,7 @@
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome 6 -->
@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/dark-mode.css">
   <link rel="stylesheet" href="css/alignments.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="css/service-fix.css">
 </head>
 <body>
@@ -89,10 +89,7 @@
           <button class="hamburger" id="hamburger" aria-label="Toggle menu">
             <span></span><span></span><span></span>
           </button>
-        </nav>
-      </div>
-    </header>
-    <ul class="nav-menu" id="nav-menu">
+          <ul class="nav-menu" id="nav-menu">
         <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
             <li class="nav-item has-dropdown">
               <a href="#" class="nav-link">About <i class="fas fa-chevron-down"></i></a>
@@ -115,8 +112,9 @@
             <li class="nav-item"><a href="login.html" class="nav-link">Sign In</a></li>
             <li class="nav-item"><a href="register.html" class="btn btn-primary nav-cta">Sign Up</a></li>
           </ul>
-
-    <div class="nav-overlay"></div>
+        </nav>
+      </div>
+    </header>
 
     <!-- HERO SECTION - AIR FREIGHT -->
     <section class="service-page-hero" id="hero">
@@ -1363,7 +1361,7 @@
 </footer>
 
 <!-- SCRIPTS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       AOS.init({
@@ -1414,49 +1412,14 @@
         });
       }
 
-      // Hamburger menu toggle
       const hamburger = document.getElementById('hamburger');
       const navMenu = document.getElementById('nav-menu');
-      const navOverlay = document.querySelector('.nav-overlay');
       if (hamburger && navMenu) {
         hamburger.addEventListener('click', function() {
           hamburger.classList.toggle('active');
           navMenu.classList.toggle('active');
-          if (navOverlay) navOverlay.classList.toggle('active');
-          document.body.classList.toggle('mobile-open');
-        });
-        if (navOverlay) {
-          navOverlay.addEventListener('click', function() {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
-            navOverlay.classList.remove('active');
-            document.body.classList.remove('mobile-open');
-          });
-        }
-        navMenu.querySelectorAll('a').forEach(function(link) {
-          link.addEventListener('click', function() {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
-            if (navOverlay) navOverlay.classList.remove('active');
-            document.body.classList.remove('mobile-open');
-          });
         });
       }
-      // Mobile dropdown toggle
-      document.querySelectorAll('.has-dropdown').forEach(function(item) {
-        var trigger = item.querySelector(':scope > a');
-        if (trigger) {
-          trigger.addEventListener('click', function(e) {
-            if (window.innerWidth > 991) return;
-            e.preventDefault();
-            e.stopPropagation();
-            document.querySelectorAll('.has-dropdown').forEach(function(other) {
-              if (other !== item) other.classList.remove('active');
-            });
-            item.classList.toggle('active');
-          });
-        }
-      });
 
       const faqItems = document.querySelectorAll('.faq-item');
       faqItems.forEach(function(item) {
