@@ -112,8 +112,6 @@
       <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-controls="nav-menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
-<<<<<<< HEAD
-=======
       <ul class="nav-menu" id="nav-menu">
         <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
         <li class="nav-item has-dropdown">
@@ -139,33 +137,9 @@
         <li class="nav-item"><a href="login.html" class="nav-link">Sign In</a></li>
         <li class="nav-item"><a href="register.html" class="btn btn-primary nav-cta">Sign Up</a></li>
       </ul>
->>>>>>> b064112 (completed)
     </nav>
   </div>
 </header>
-<ul class="nav-menu" id="nav-menu">
-  <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-  <li class="nav-item has-dropdown">
-    <a href="#" class="nav-link">About <i class="fas fa-chevron-down"></i></a>
-    <ul class="dropdown">
-      <li><a href="about.html" class="dropdown-link">About Us</a></li>
-      <li><a href="team.html" class="dropdown-link">Our Team</a></li>            <li><a href="faq.html" class="dropdown-link">FAQ</a></li>
-    </ul>
-  </li>
-  <li class="nav-item has-dropdown">
-    <a href="#" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
-    <ul class="dropdown">
-      <li><a href="road-freight.html" class="dropdown-link">Road Freight</a></li>
-      <li><a href="air-freight.html" class="dropdown-link">Air Freight</a></li>
-      <li><a href="warehousing.html" class="dropdown-link">Warehousing</a></li>          </ul>
-  </li>
-  <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-  <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
-  <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-  <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-  <li class="nav-item"><a href="login.html" class="nav-link">Sign In</a></li>
-  <li class="nav-item"><a href="register.html" class="btn btn-primary nav-cta">Sign Up</a></li>
-</ul>
 <div class="nav-overlay"></div>
 
 <main>
@@ -1295,7 +1269,7 @@
           <li><a href="road-freight.html">Road Freight</a></li>
           <li><a href="air-freight.html">Air Freight</a></li>
           <li><a href="warehousing.html">Warehousing</a></li>
-<<<<<<< HEAD
+          <li><a href="freight-forwarding.html">Freight Forwarding</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -1305,9 +1279,6 @@
           <li><a href="contact.html">Contact Support</a></li>
           <li><a href="404.html">Terms of Service</a></li>
           <li><a href="404.html">Privacy Policy</a></li>
-=======
-          <li><a href="freight-forwarding.html">Freight Forwarding</a></li>
->>>>>>> b064112 (completed)
         </ul>
       </div>
       <div class="footer-col">
@@ -1393,30 +1364,6 @@
       const navMenu = document.getElementById('nav-menu');
       const navOverlay = document.querySelector('.nav-overlay');
       if (hamburger && navMenu) {
-<<<<<<< HEAD
-        hamburger.addEventListener('click', function() {
-          hamburger.classList.toggle('active');
-          navMenu.classList.toggle('active');
-          if (navOverlay) navOverlay.classList.toggle('active');
-          document.body.classList.toggle('mobile-open');
-        });
-        if (navOverlay) {
-          navOverlay.addEventListener('click', function() {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
-            navOverlay.classList.remove('active');
-            document.body.classList.remove('mobile-open');
-          });
-        }
-        // Close menu on nav link click
-        navMenu.querySelectorAll('a').forEach(function(link) {
-          link.addEventListener('click', function() {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
-            if (navOverlay) navOverlay.classList.remove('active');
-            document.body.classList.remove('mobile-open');
-          });
-=======
         function closeDropdown(item) {
           const trigger = item.querySelector('.nav-link');
           const submenu = item.querySelector('.dropdown');
@@ -1512,7 +1459,6 @@
           if (window.innerWidth > 1024) {
             setMenuState(false);
           }
->>>>>>> b064112 (completed)
         });
       }
       // Mobile dropdown toggle
