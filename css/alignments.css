@@ -1727,12 +1727,12 @@ body.dark-mode .dark-mode-toggle .fa-sun { display: inline; }
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     font-weight: 600;
-    color: #FFFFFF;
+    color: #0F172A;
     margin-bottom: 12px;
 }
 .service-card p {
     font-size: 15px;
-    color: rgba(255,255,255,0.8);
+    color: #1E293B;
     line-height: 1.7;
     margin-bottom: 25px;
 }
@@ -1743,13 +1743,13 @@ body.dark-mode .dark-mode-toggle .fa-sun { display: inline; }
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: 600;
-    color: #F59E0B;
+    color: #0F172A;
     text-decoration: none;
     transition: all 0.3s ease;
 }
 .service-link:hover {
     gap: 12px;
-    color: #D97706;
+    color: #334155;
 }
 .service-link i {
     font-size: 12px;
