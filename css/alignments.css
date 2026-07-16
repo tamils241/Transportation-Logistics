@@ -3474,15 +3474,15 @@ body.dark-mode .dark-mode-toggle .fa-sun { display: inline; }
 }
 .fleet-specs li {
     font-size: 14px;
-    color: #1F2937;
+    color: #0F172A;
     padding: 6px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(15,23,42,0.1);
 }
 .fleet-specs li:last-child {
     border-bottom: none;
 }
 .fleet-specs li strong {
-    color: #111827;
+    color: #0F172A;
 }
 .fleet-info {
     padding: 25px;
