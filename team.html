@@ -608,34 +608,6 @@
       }, 3000);
     }
 
-    // Back to Top
-    var backToTop = document.getElementById('back-to-top');
-    if (backToTop) {
-      window.addEventListener('scroll', function() {
-        backToTop.classList.toggle('visible', window.scrollY > 500);
-      });
-    }
-
-    // Header scroll
-    var header = document.getElementById('main-header');
-    if (header) {
-      window.addEventListener('scroll', function() {
-        header.classList.toggle('sticky', window.scrollY > 100);
-      });
-    }
-
-    // Hamburger
-    var hamburger = document.getElementById('hamburger');
-    var navMenu = document.getElementById('nav-menu');
-    if (hamburger && navMenu) {
-      hamburger.addEventListener('click', function() {
-        hamburger.classList.toggle('active');
-        navMenu.classList.toggle('active');
-      });
-    }
-
-
-
     // Newsletter
     var newsletterForm = document.querySelector('.newsletter-form');
     if (newsletterForm) {
@@ -645,31 +617,6 @@
         newsletterForm.reset();
       });
     }
-
-    // Dropdown hover
-    var dropdowns = document.querySelectorAll('.has-dropdown, .has-mega-menu');
-    dropdowns.forEach(function(item) {
-      item.addEventListener('mouseenter', function() {
-        if (window.innerWidth > 992) this.classList.add('hovered');
-      });
-      item.addEventListener('mouseleave', function() {
-        if (window.innerWidth > 992) this.classList.remove('hovered');
-      });
-    });
-
-    // Smooth scroll
-    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
-      anchor.addEventListener('click', function(e) {
-        var href = this.getAttribute('href');
-        if (href !== '#') {
-          var target = document.querySelector(href);
-          if (target) {
-            e.preventDefault();
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }
-        }
-      });
-    });
   });
 </script>
 <script src="js/main.js"></script>

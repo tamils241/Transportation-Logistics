@@ -22,7 +22,7 @@
     .sidebar { width: 260px; background: linear-gradient(180deg, #0F172A 0%, #1E293B 100%); color: #fff; position: fixed; top: 0; left: 0; height: 100vh; z-index: 100; display: flex; flex-direction: column; transition: transform 0.3s ease; }
     .sidebar-header { padding: 24px 20px; border-bottom: 1px solid rgba(255,255,255,0.08); }
     .sidebar-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
-    .sidebar-logo-img { display: block; width: auto; height: 42px; max-width: 175px; object-fit: contain; }
+    .sidebar-logo-img { display: block; width: auto; height: 42px; max-width: 175px; object-fit: contain; filter: invert(40%) sepia(85%) saturate(2000%) hue-rotate(10deg) brightness(105%) contrast(105%); }
     .sidebar-logo-icon { width: 40px; height: 40px; background: linear-gradient(135deg, #F59E0B, #D97706); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 18px; }
     .sidebar-logo-text { font-family: 'Poppins', sans-serif; font-size: 20px; font-weight: 700; color: #fff; }
     .sidebar-logo-text span { color: #F59E0B; }
@@ -180,6 +180,32 @@
       .card-body { padding: 16px; }
       table { min-width: 680px; }
     }
+
+    /* Notification Panel */
+    .notif-wrapper { position: relative; }
+    .notif-panel { position: absolute; top: calc(100% + 8px); right: 0; width: 340px; background: #fff; border-radius: 14px; box-shadow: 0 12px 40px rgba(0,0,0,0.12); border: 1px solid #e9ecef; z-index: 200; display: none; overflow: hidden; }
+    .notif-panel.open { display: block; animation: notifSlide 0.2s ease; }
+    @keyframes notifSlide { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
+    .notif-header { display: flex; align-items: center; justify-content: space-between; padding: 16px 18px 12px; border-bottom: 1px solid #f3f4f6; }
+    .notif-header h4 { font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 600; color: #0F172A; }
+    .notif-mark-read { font-size: 12px; color: #F59E0B; background: none; border: none; cursor: pointer; font-weight: 500; }
+    .notif-mark-read:hover { color: #D97706; }
+    .notif-list { max-height: 320px; overflow-y: auto; }
+    .notif-item { display: flex; gap: 12px; padding: 14px 18px; border-bottom: 1px solid #f3f4f6; cursor: pointer; transition: background 0.2s; }
+    .notif-item:last-child { border-bottom: none; }
+    .notif-item:hover { background: #FFF9EF; }
+    .notif-item.unread { background: #FFFBEB; }
+    .notif-icon { width: 38px; height: 38px; min-width: 38px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 15px; }
+    .notif-icon.shipment { background: rgba(59,130,246,0.1); color: #3B82F6; }
+    .notif-icon.delivery { background: rgba(16,185,129,0.1); color: #10B981; }
+    .notif-icon.alert { background: rgba(220,38,38,0.1); color: #DC2626; }
+    .notif-icon.info { background: rgba(245,158,11,0.1); color: #F59E0B; }
+    .notif-text { flex: 1; min-width: 0; }
+    .notif-text p { font-size: 13px; color: #333; line-height: 1.45; }
+    .notif-text p strong { font-weight: 600; }
+    .notif-text .notif-time { font-size: 11px; color: #9CA3AF; margin-top: 3px; display: block; }
+    .notif-empty { text-align: center; padding: 32px 18px; color: #9CA3AF; font-size: 13px; }
+    .notif-empty i { font-size: 28px; color: #D1D5DB; margin-bottom: 10px; display: block; }
   </style>
 </head>
 <body>
@@ -222,7 +248,45 @@
         <span class="page-title">My Dashboard</span>
       </div>
       <div class="top-bar-right">
-        <button class="top-bar-btn"><i class="fas fa-bell"></i><span class="notification-dot"></span></button>
+        <div class="notif-wrapper">
+          <button class="top-bar-btn" id="notifBtn"><i class="fas fa-bell"></i><span class="notification-dot" id="notifDot"></span></button>
+          <div class="notif-panel" id="notifPanel">
+            <div class="notif-header">
+              <h4>Notifications</h4>
+              <button class="notif-mark-read" id="notifMarkRead">Mark all read</button>
+            </div>
+            <div class="notif-list" id="notifList">
+              <div class="notif-item unread">
+                <div class="notif-icon shipment"><i class="fas fa-shipping-fast"></i></div>
+                <div class="notif-text">
+                  <p><strong>#STL-30142</strong> has been picked up and is now in transit to Los Angeles.</p>
+                  <span class="notif-time">12 minutes ago</span>
+                </div>
+              </div>
+              <div class="notif-item unread">
+                <div class="notif-icon delivery"><i class="fas fa-check-circle"></i></div>
+                <div class="notif-text">
+                  <p><strong>#STL-30098</strong> was delivered to Chicago. Proof of delivery confirmed.</p>
+                  <span class="notif-time">2 hours ago</span>
+                </div>
+              </div>
+              <div class="notif-item">
+                <div class="notif-icon info"><i class="fas fa-file-invoice"></i></div>
+                <div class="notif-text">
+                  <p>Invoice <strong>#INV-2046</strong> for shipment #STL-30055 is ready for review.</p>
+                  <span class="notif-time">1 day ago</span>
+                </div>
+              </div>
+              <div class="notif-item">
+                <div class="notif-icon alert"><i class="fas fa-exclamation-triangle"></i></div>
+                <div class="notif-text">
+                  <p>Customs clearance delayed for <strong>#STL-29841</strong>. Additional documents may be needed.</p>
+                  <span class="notif-time">2 days ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="user-menu">
           <div class="user-avatar" data-user-avatar>JD</div>
           <div class="user-meta">
@@ -499,6 +563,28 @@ document.addEventListener('DOMContentLoaded', function() {
     var now = new Date();
     var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
     dateEl.textContent = now.toLocaleDateString('en-US', options);
+  }
+
+  var notifBtn = document.getElementById('notifBtn');
+  var notifPanel = document.getElementById('notifPanel');
+  var notifDot = document.getElementById('notifDot');
+  var notifMarkRead = document.getElementById('notifMarkRead');
+  if (notifBtn && notifPanel) {
+    notifBtn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      notifPanel.classList.toggle('open');
+    });
+    document.addEventListener('click', function(e) {
+      if (!notifPanel.contains(e.target) && !notifBtn.contains(e.target)) {
+        notifPanel.classList.remove('open');
+      }
+    });
+    if (notifMarkRead) {
+      notifMarkRead.addEventListener('click', function() {
+        notifPanel.querySelectorAll('.notif-item.unread').forEach(function(item) { item.classList.remove('unread'); });
+        if (notifDot) notifDot.style.display = 'none';
+      });
+    }
   }
 });
 

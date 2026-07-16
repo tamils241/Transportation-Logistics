@@ -157,7 +157,7 @@
             <div class="about-grid">
                 <div class="about-image" data-aos="fade-right">
                     <div class="image-placeholder gradient-aviation">
-                        <i class="fas fa-jet-fighter-up"></i>
+                       
                     </div>
                     <div class="experience-badge">
                         <span class="exp-number">25+</span>
@@ -213,7 +213,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="contact.html" class="btn btn-primary">
+                    <a href="404.html" class="btn btn-primary">
                         <i class="fas fa-plane"></i> Learn More
                     </a>
                 </div>
@@ -252,7 +252,7 @@
                             <li><i class="fas fa-check"></i> Real-time GPS tracking</li>
                             <li><i class="fas fa-check"></i> Money-back guarantee</li>
                         </ul>
-                        <a href="contact.html" class="service-link">
+                        <a href="404.html" class="service-link">
                             Learn More <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
@@ -275,7 +275,7 @@
                             <li><i class="fas fa-check"></i> Remote area access</li>
                             <li><i class="fas fa-check"></i> Custom routing</li>
                         </ul>
-                        <a href="contact.html" class="service-link">
+                        <a href="404.html" class="service-link">
                             Learn More <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
@@ -298,7 +298,7 @@
                             <li><i class="fas fa-check"></i> Regular departures</li>
                             <li><i class="fas fa-check"></i> Door-to-door options</li>
                         </ul>
-                        <a href="contact.html" class="service-link">
+                        <a href="404.html" class="service-link">
                             Learn More <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
@@ -321,7 +321,7 @@
                             <li><i class="fas fa-check"></i> Quick customs clearance</li>
                             <li><i class="fas fa-check"></i> Priority boarding</li>
                         </ul>
-                        <a href="contact.html" class="service-link">
+                        <a href="404.html" class="service-link">
                             Learn More <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
@@ -344,7 +344,7 @@
                             <li><i class="fas fa-check"></i> Specialized packaging</li>
                             <li><i class="fas fa-check"></i> Compliance guaranteed</li>
                         </ul>
-                        <a href="contact.html" class="service-link">
+                        <a href="404.html" class="service-link">
                             Learn More <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
@@ -367,7 +367,7 @@
                             <li><i class="fas fa-check"></i> Bonded warehouse access</li>
                             <li><i class="fas fa-check"></i> Last-mile coordination</li>
                         </ul>
-                        <a href="contact.html" class="service-link">
+                        <a href="404.html" class="service-link">
                             Learn More <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
@@ -1112,7 +1112,7 @@
                             <li class="excluded"><i class="fas fa-times-circle"></i> Same-day pickup</li>
                             <li class="excluded"><i class="fas fa-times-circle"></i> Dedicated account manager</li>
                         </ul>
-                        <a href="contact.html" class="btn btn-outline-primary btn-block">
+                        <a href="404.html" class="btn btn-outline-primary btn-block">
                             Get Started <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
@@ -1144,7 +1144,7 @@
                             <li class="included"><i class="fas fa-check-circle"></i> Same-day pickup</li>
                             <li class="excluded"><i class="fas fa-times-circle"></i> Dedicated account manager</li>
                         </ul>
-                        <a href="contact.html" class="btn btn-primary btn-block">
+                        <a href="404.html" class="btn btn-primary btn-block">
                             Get Started <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
@@ -1175,7 +1175,7 @@
                             <li class="included"><i class="fas fa-check-circle"></i> Same-day pickup</li>
                             <li class="included"><i class="fas fa-check-circle"></i> Dedicated account manager</li>
                         </ul>
-                        <a href="contact.html" class="btn btn-outline-primary btn-block">
+                        <a href="404.html" class="btn btn-outline-primary btn-block">
                             Contact Sales <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
@@ -1314,77 +1314,6 @@
         }, 3000);
       }
 
-      const backToTop = document.getElementById('back-to-top');
-      if (backToTop) {
-        window.addEventListener('scroll', function() {
-          if (window.scrollY > 500) {
-            backToTop.classList.add('visible');
-          } else {
-            backToTop.classList.remove('visible');
-          }
-        });
-      }
-
-      const header = document.getElementById('main-header');
-      if (header) {
-        window.addEventListener('scroll', function() {
-          if (window.scrollY > 100) {
-            header.classList.add('sticky');
-          } else {
-            header.classList.remove('sticky');
-          }
-        });
-      }
-
-      const hamburger = document.getElementById('hamburger');
-      const navMenu = document.getElementById('nav-menu');
-      if (hamburger && navMenu) {
-        hamburger.addEventListener('click', function() {
-          hamburger.classList.toggle('active');
-          navMenu.classList.toggle('active');
-        });
-      }
-
-      const faqItems = document.querySelectorAll('.faq-item');
-      faqItems.forEach(function(item) {
-        const question = item.querySelector('.faq-question');
-        if (question) {
-          question.addEventListener('click', function() {
-            const isActive = item.classList.contains('active');
-            faqItems.forEach(function(i) { i.classList.remove('active'); });
-            if (!isActive) {
-              item.classList.add('active');
-            }
-          });
-        }
-      });
-
-      const dropdowns = document.querySelectorAll('.has-dropdown, .has-mega-menu');
-      dropdowns.forEach(function(item) {
-        item.addEventListener('mouseenter', function() {
-          if (window.innerWidth > 992) {
-            this.classList.add('hovered');
-          }
-        });
-        item.addEventListener('mouseleave', function() {
-          if (window.innerWidth > 992) {
-            this.classList.remove('hovered');
-          }
-        });
-      });
-
-      document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
-        anchor.addEventListener('click', function(e) {
-          const href = this.getAttribute('href');
-          if (href !== '#') {
-            const target = document.querySelector(href);
-            if (target) {
-              e.preventDefault();
-              target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-          }
-        });
-      });
     });
   </script>
   <script src="js/main.js"></script>

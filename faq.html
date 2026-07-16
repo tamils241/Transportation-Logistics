@@ -744,16 +744,6 @@
 </footer>
 
     <script src="js/main.js"></script>
-    <script>
-      const hamburger = document.getElementById('hamburger');
-      const navMenu = document.getElementById('nav-menu');
-      if (hamburger && navMenu) {
-        hamburger.addEventListener('click', function() {
-          hamburger.classList.toggle('active');
-          navMenu.classList.toggle('active');
-        });
-      }
-    </script>
     <script src="js/counter.js"></script>
     <script src="js/faq.js"></script>
     <script>
@@ -827,20 +817,6 @@
                         item.style.display = 'none';
                     }
                 });
-            });
-        });
-
-        // Smooth scroll for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                var target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
             });
         });
     </script>

@@ -111,20 +111,20 @@
       <ul class="nav-menu" id="nav-menu">
         <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
         <li class="nav-item has-dropdown">
-          <input type="checkbox" class="nav-dropdown-toggle" id="nav-about-toggle">
-          <label for="nav-about-toggle" class="nav-link nav-dropdown-label">About <i class="fas fa-chevron-down"></i></label>
+          <a href="#" class="nav-link">About <i class="fas fa-chevron-down"></i></a>
           <ul class="dropdown">
             <li><a href="about.html" class="dropdown-link">About Us</a></li>
-            <li><a href="team.html" class="dropdown-link">Our Team</a></li>            <li><a href="faq.html" class="dropdown-link">FAQ</a></li>
+            <li><a href="team.html" class="dropdown-link">Our Team</a></li>
+            <li><a href="faq.html" class="dropdown-link">FAQ</a></li>
           </ul>
         </li>
         <li class="nav-item has-dropdown">
-          <input type="checkbox" class="nav-dropdown-toggle" id="nav-services-toggle">
-          <label for="nav-services-toggle" class="nav-link nav-dropdown-label">Services <i class="fas fa-chevron-down"></i></label>
+          <a href="#" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
           <ul class="dropdown">
             <li><a href="road-freight.html" class="dropdown-link">Road Freight</a></li>
             <li><a href="air-freight.html" class="dropdown-link">Air Freight</a></li>
-            <li><a href="warehousing.html" class="dropdown-link">Warehousing</a></li>          </ul>
+            <li><a href="warehousing.html" class="dropdown-link">Warehousing</a></li>
+          </ul>
         </li>
         <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
         <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
@@ -485,7 +485,7 @@
       <div class="features-right" data-aos="fade-left">
         <div class="features-image-placeholder">
           
-          <a href="#" class="features-play-btn"><i class="fas fa-play"></i></a>
+          <a href="404.html" class="features-play-btn"><i class="fas fa-play"></i></a>
         </div>
       </div>
     </div>
@@ -956,31 +956,6 @@
   </div>
 </section>
 
-
-<!-- PARTNERS SECTION -->
-<section class="partners-section section-padding bg-light" id="partners">
-  <div class="container">
-    <div class="section-header center" data-aos="fade-up">
-      <span class="section-tag">Our Partners</span>
-      <h2 class="section-title">Trusted by Industry Leaders</h2>
-      <p class="section-desc">We are proud to partner with leading organizations across the globe.</p>
-    </div>
-    <div class="partners-scroll" data-aos="fade-up">
-      <div class="partners-track">
-        <div class="partner-logo"><i class="fas fa-building"></i><span>Partner Co.</span></div>
-        <div class="partner-logo"><i class="fas fa-industry"></i><span>GlobalCorp</span></div>
-        <div class="partner-logo"><span>MegaInd</span></div>
-        <div class="partner-logo"><i class="fas fa-ship"></i><span>SeaTrade</span></div>
-        <div class="partner-logo"><i class="fas fa-plane"></i><span>AirLog</span></div>
-        <div class="partner-logo"><i class="fas fa-train"></i><span>RailLink</span></div>
-        <div class="partner-logo"><i class="fas fa-robot"></i><span>TechLog</span></div>
-        <div class="partner-logo"><i class="fas fa-warehouse"></i><span>WareCo</span></div>
-      </div>
-      
-    </div>
-  </div>
-</section>
-
 <!-- CTA BANNER SECTION -->
 <section class="cta-section">
   <div class="container">
@@ -1325,176 +1300,6 @@
           }
         }, 3000);
       }
-
-      // Back to Top Button
-      const backToTop = document.getElementById('back-to-top');
-      if (backToTop) {
-        window.addEventListener('scroll', function() {
-          if (window.scrollY > 500) {
-            backToTop.classList.add('visible');
-          } else {
-            backToTop.classList.remove('visible');
-          }
-        });
-      }
-
-      // Header scroll effect
-      const header = document.getElementById('main-header');
-      if (header) {
-        window.addEventListener('scroll', function() {
-          if (window.scrollY > 100) {
-            header.classList.add('sticky');
-          } else {
-            header.classList.remove('sticky');
-          }
-        });
-      }
-
-      // Hamburger menu toggle
-      const hamburger = document.getElementById('hamburger');
-      const navMenu = document.getElementById('nav-menu');
-      if (hamburger && navMenu) {
-        function closeDropdown(item) {
-          const trigger = item.querySelector('.nav-link');
-          const submenu = item.querySelector('.dropdown');
-          item.classList.remove('open');
-          if (submenu) {
-            submenu.classList.remove('active');
-            submenu.style.removeProperty('display');
-            submenu.style.removeProperty('max-height');
-            submenu.style.removeProperty('opacity');
-            submenu.style.removeProperty('visibility');
-          }
-          if (trigger) trigger.setAttribute('aria-expanded', 'false');
-        }
-
-        function setMenuState(isOpen) {
-          hamburger.classList.toggle('active', isOpen);
-          navMenu.classList.toggle('active', isOpen);
-          document.body.classList.toggle('mobile-open', isOpen);
-          hamburger.setAttribute('aria-expanded', String(isOpen));
-          if (!isOpen) {
-            navMenu.querySelectorAll('.nav-dropdown-toggle').forEach(function(toggle) {
-              toggle.checked = false;
-            });
-            navMenu.querySelectorAll('.has-dropdown').forEach(function(item) {
-              closeDropdown(item);
-            });
-          }
-        }
-
-        hamburger.addEventListener('click', function(e) {
-          e.preventDefault();
-          const isOpen = !hamburger.classList.contains('active');
-          setMenuState(isOpen);
-        });
-
-        navMenu.querySelectorAll('.has-dropdown').forEach(function(item) {
-          const trigger = item.querySelector('.nav-link');
-          if (trigger) trigger.setAttribute('aria-expanded', 'false');
-        });
-
-        navMenu.addEventListener('click', function(e) {
-          const link = e.target.closest('a');
-          if (!link || !navMenu.contains(link)) return;
-
-          const item = link.parentElement;
-          if (window.innerWidth <= 1024 && item.classList.contains('has-dropdown')) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            const submenu = item.querySelector('.dropdown');
-            if (!submenu) return;
-            const willOpen = !item.classList.contains('open');
-
-            navMenu.querySelectorAll('.has-dropdown').forEach(function(otherItem) {
-              if (otherItem !== item) closeDropdown(otherItem);
-            });
-
-            item.classList.toggle('open', willOpen);
-            submenu.classList.toggle('active', willOpen);
-            link.setAttribute('aria-expanded', String(willOpen));
-
-            if (willOpen) {
-              submenu.style.setProperty('display', 'block', 'important');
-              submenu.style.setProperty('max-height', submenu.scrollHeight + 24 + 'px', 'important');
-              submenu.style.setProperty('opacity', '1', 'important');
-              submenu.style.setProperty('visibility', 'visible', 'important');
-            } else {
-              closeDropdown(item);
-            }
-            return;
-          }
-
-          setMenuState(false);
-        });
-
-        document.addEventListener('click', function(e) {
-          if (
-            navMenu.classList.contains('active') &&
-            !navMenu.contains(e.target) &&
-            !hamburger.contains(e.target)
-          ) {
-            setMenuState(false);
-          }
-        });
-
-        document.addEventListener('keydown', function(e) {
-          if (e.key === 'Escape' && navMenu.classList.contains('active')) {
-            setMenuState(false);
-          }
-        });
-
-        window.addEventListener('resize', function() {
-          if (window.innerWidth > 1024) {
-            setMenuState(false);
-          }
-        });
-      }
-
-      // FAQ accordion
-      const faqItems = document.querySelectorAll('.faq-item');
-      faqItems.forEach(function(item) {
-        const question = item.querySelector('.faq-question');
-        if (question) {
-          question.addEventListener('click', function() {
-            const isActive = item.classList.contains('active');
-            faqItems.forEach(function(i) { i.classList.remove('active'); });
-            if (!isActive) {
-              item.classList.add('active');
-            }
-          });
-        }
-      });
-
-      // Dropdown hover for desktop
-      const dropdowns = document.querySelectorAll('.has-dropdown, .has-mega-menu');
-      dropdowns.forEach(function(item) {
-        item.addEventListener('mouseenter', function() {
-          if (window.innerWidth > 1024) {
-            this.classList.add('hovered');
-          }
-        });
-        item.addEventListener('mouseleave', function() {
-          if (window.innerWidth > 1024) {
-            this.classList.remove('hovered');
-          }
-        });
-      });
-
-      // Smooth scroll
-      document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
-        anchor.addEventListener('click', function(e) {
-          const href = this.getAttribute('href');
-          if (href !== '#') {
-            const target = document.querySelector(href);
-            if (target) {
-              e.preventDefault();
-              target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-          }
-        });
-      });
     });
   </script>
   <script src="js/main.js"></script>

@@ -10,7 +10,7 @@
 (function () {
   "use strict";
 
-  // ─── DOM Ready ───────────────────────────────────────────────────────────────
+  var MOBILE_BREAKPOINT = 1024;
 
   document.addEventListener("DOMContentLoaded", init);
 
@@ -19,182 +19,109 @@
     pageLoader();
     stickyHeader();
     mobileNavigation();
-    dropdownNavigation();
-    megaMenu();
     backToTop();
     searchPopup();
     smoothScrolling();
-    preventEmptyLinks();
     scrollReveal();
     activeNavLink();
     tooltip();
   }
 
-  // ─── 1. Page Loader ─────────────────────────────────────────────────────────
-
   function pageLoader() {
-    const loader = document.querySelector(".page-loader");
+    var loader = document.querySelector(".page-loader");
     if (!loader) return;
 
     window.addEventListener("load", function () {
       loader.style.transition = "opacity 0.4s ease";
       loader.style.opacity = "0";
-
       setTimeout(function () {
         loader.style.display = "none";
       }, 400);
     });
   }
 
-  // ─── 2. Sticky Header ───────────────────────────────────────────────────────
-
   function stickyHeader() {
-    const header = document.querySelector(".header");
+    var header = document.querySelector(".header");
     if (!header) return;
 
-    var scrollThreshold = 50;
-
     function handleScroll() {
-      if (window.scrollY > scrollThreshold) {
-        header.classList.add("scrolled");
-      } else {
-        header.classList.remove("scrolled");
-      }
+      header.classList.toggle("scrolled", window.scrollY > 50);
     }
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     handleScroll();
   }
 
-  // ─── 3. Mobile Navigation ───────────────────────────────────────────────────
-
   function mobileNavigation() {
-    var toggle = document.querySelector(".mobile-toggle");
-    var navMenu = document.querySelector(".nav-menu");
-    if (!toggle || !navMenu) return;
+    var hamburger = document.getElementById("hamburger");
+    var navMenu = document.getElementById("nav-menu");
+    if (!hamburger || !navMenu) return;
 
-    toggle.addEventListener("click", function (e) {
+    function setMenuState(isOpen) {
+      hamburger.classList.toggle("active", isOpen);
+      navMenu.classList.toggle("active", isOpen);
+      document.body.classList.toggle("mobile-open", isOpen);
+      hamburger.setAttribute("aria-expanded", String(isOpen));
+    }
+
+    hamburger.addEventListener("click", function (e) {
       e.preventDefault();
-      e.stopPropagation();
-
-      toggle.classList.toggle("active");
-      navMenu.classList.toggle("active");
-      document.body.classList.toggle("mobile-open");
+      setMenuState(!hamburger.classList.contains("active"));
     });
 
-    // Close menu when a nav link is clicked
-    var navLinks = navMenu.querySelectorAll("a");
-    navLinks.forEach(function (link) {
-      link.addEventListener("click", function () {
-        toggle.classList.remove("active");
-        navMenu.classList.remove("active");
-        document.body.classList.remove("mobile-open");
-      });
+    navMenu.addEventListener("click", function (e) {
+      var link = e.target.closest("a");
+      if (!link || !navMenu.contains(link)) return;
+      if (link.getAttribute("href") === "#") {
+        e.preventDefault();
+        return;
+      }
+      setMenuState(false);
     });
 
-    // Close menu when clicking outside
     document.addEventListener("click", function (e) {
       if (
         navMenu.classList.contains("active") &&
         !navMenu.contains(e.target) &&
-        !toggle.contains(e.target)
+        !hamburger.contains(e.target)
       ) {
-        toggle.classList.remove("active");
-        navMenu.classList.remove("active");
-        document.body.classList.remove("mobile-open");
+        setMenuState(false);
       }
     });
-  }
 
-  // ─── 4. Dropdown Navigation ─────────────────────────────────────────────────
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && navMenu.classList.contains("active")) {
+        setMenuState(false);
+      }
+    });
 
-  function dropdownNavigation() {
-    var dropdowns = document.querySelectorAll(".nav-dropdown");
-    if (!dropdowns.length) return;
+    window.addEventListener("resize", function () {
+      if (window.innerWidth > MOBILE_BREAKPOINT) {
+        setMenuState(false);
+      }
+    });
 
-    dropdowns.forEach(function (dropdown) {
-      var trigger = dropdown.querySelector("a");
-      if (!trigger) return;
-
-      trigger.addEventListener("click", function (e) {
-        // Only toggle on mobile (screen width <= 991px)
-        if (window.innerWidth > 991) return;
-
-        e.preventDefault();
-        e.stopPropagation();
-
-        // Close other open dropdowns
-        dropdowns.forEach(function (other) {
-          if (other !== dropdown && other.classList.contains("active")) {
-            other.classList.remove("active");
-          }
-        });
-
-        dropdown.classList.toggle("active");
+    var dropdowns = document.querySelectorAll(".has-dropdown, .has-mega-menu");
+    dropdowns.forEach(function (item) {
+      item.addEventListener("mouseenter", function () {
+        if (window.innerWidth > MOBILE_BREAKPOINT) {
+          this.classList.add("hovered");
+        }
+      });
+      item.addEventListener("mouseleave", function () {
+        if (window.innerWidth > MOBILE_BREAKPOINT) {
+          this.classList.remove("hovered");
+        }
       });
     });
-
-    // Close dropdowns when clicking outside
-    document.addEventListener("click", function (e) {
-      if (!e.target.closest(".nav-dropdown")) {
-        dropdowns.forEach(function (dropdown) {
-          dropdown.classList.remove("active");
-        });
-      }
-    });
   }
-
-  // ─── 5. Mega Menu ───────────────────────────────────────────────────────────
-
-  function megaMenu() {
-    var megaMenus = document.querySelectorAll(".mega-menu");
-    if (!megaMenus.length) return;
-
-    megaMenus.forEach(function (mega) {
-      var trigger = mega.querySelector("a");
-      if (!trigger) return;
-
-      trigger.addEventListener("click", function (e) {
-        if (window.innerWidth > 991) return;
-
-        e.preventDefault();
-        e.stopPropagation();
-
-        // Close other mega menus
-        megaMenus.forEach(function (other) {
-          if (other !== mega && other.classList.contains("active")) {
-            other.classList.remove("active");
-          }
-        });
-
-        mega.classList.toggle("active");
-      });
-    });
-
-    // Close mega menus when clicking outside
-    document.addEventListener("click", function (e) {
-      if (!e.target.closest(".mega-menu")) {
-        megaMenus.forEach(function (mega) {
-          mega.classList.remove("active");
-        });
-      }
-    });
-  }
-
-  // ─── 6. Back To Top Button ──────────────────────────────────────────────────
 
   function backToTop() {
     var btn = document.querySelector(".back-to-top");
     if (!btn) return;
 
-    var scrollThreshold = 400;
-
     function toggleButton() {
-      if (window.scrollY > scrollThreshold) {
-        btn.classList.add("visible");
-      } else {
-        btn.classList.remove("visible");
-      }
+      btn.classList.toggle("visible", window.scrollY > 400);
     }
 
     window.addEventListener("scroll", toggleButton, { passive: true });
@@ -202,14 +129,9 @@
 
     btn.addEventListener("click", function (e) {
       e.preventDefault();
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
+      window.scrollTo({ top: 0, behavior: "smooth" });
     });
   }
-
-  // ─── 7. Search Popup ────────────────────────────────────────────────────────
 
   function searchPopup() {
     var popup = document.querySelector(".search-popup");
@@ -222,14 +144,8 @@
     function openPopup() {
       popup.classList.add("active");
       document.body.classList.add("search-open");
-
-      // Focus the search input
       var input = popup.querySelector("input[type='search'], input[type='text']");
-      if (input) {
-        setTimeout(function () {
-          input.focus();
-        }, 100);
-      }
+      if (input) setTimeout(function () { input.focus(); }, 100);
     }
 
     function closePopup() {
@@ -260,8 +176,6 @@
     });
   }
 
-  // ─── 8. Smooth Scrolling ────────────────────────────────────────────────────
-
   function smoothScrolling() {
     document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
       anchor.addEventListener("click", function (e) {
@@ -273,44 +187,21 @@
 
         e.preventDefault();
 
-        var headerHeight =
-          document.querySelector(".header") ?
-            document.querySelector(".header").offsetHeight : 0;
+        var header = document.querySelector(".header");
+        var headerHeight = header ? header.offsetHeight : 0;
+        var targetPosition = target.getBoundingClientRect().top + window.scrollY - headerHeight;
 
-        var targetPosition =
-          target.getBoundingClientRect().top + window.scrollY - headerHeight;
-
-        window.scrollTo({
-          top: targetPosition,
-          behavior: "smooth",
-        });
+        window.scrollTo({ top: targetPosition, behavior: "smooth" });
       });
     });
   }
-
-  // ─── 9. Prevent Empty Links ─────────────────────────────────────────────────
-
-  function preventEmptyLinks() {
-    document.querySelectorAll('a[href="#"]').forEach(function (link) {
-      link.addEventListener("click", function (e) {
-        e.preventDefault();
-      });
-    });
-  }
-
-  // ─── 10. Scroll Reveal Animation ────────────────────────────────────────────
 
   function scrollReveal() {
-    var revealSelectors =
-      ".reveal, .reveal-left, .reveal-right, .reveal-zoom";
-    var elements = document.querySelectorAll(revealSelectors);
+    var elements = document.querySelectorAll(".reveal, .reveal-left, .reveal-right, .reveal-zoom");
     if (!elements.length) return;
 
     if (!("IntersectionObserver" in window)) {
-      // Fallback: show everything immediately
-      elements.forEach(function (el) {
-        el.classList.add("revealed");
-      });
+      elements.forEach(function (el) { el.classList.add("revealed"); });
       return;
     }
 
@@ -326,12 +217,8 @@
       { threshold: 0.15 }
     );
 
-    elements.forEach(function (el) {
-      observer.observe(el);
-    });
+    elements.forEach(function (el) { observer.observe(el); });
   }
-
-  // ─── 11. Active Navigation Link ─────────────────────────────────────────────
 
   function activeNavLink() {
     var navLinks = document.querySelectorAll(".nav-menu a");
@@ -348,16 +235,13 @@
       if (linkPage === currentPage) {
         link.classList.add("active");
 
-        // Also activate parent dropdown if present
-        var parentDropdown = link.closest(".nav-dropdown");
+        var parentDropdown = link.closest(".has-dropdown");
         if (parentDropdown) {
           parentDropdown.classList.add("active");
         }
       }
     });
   }
-
-  // ─── 12. Tooltip ────────────────────────────────────────────────────────────
 
   function tooltip() {
     var elements = document.querySelectorAll("[data-tooltip]");
@@ -377,18 +261,13 @@
 
         var rect = el.getBoundingClientRect();
         tooltipEl.style.position = "absolute";
-        tooltipEl.style.top =
-          rect.top - tooltipEl.offsetHeight - 8 + window.scrollY + "px";
-        tooltipEl.style.left =
-          rect.left +
-          (rect.width - tooltipEl.offsetWidth) / 2 +
-          "px";
+        tooltipEl.style.top = rect.top - tooltipEl.offsetHeight - 8 + window.scrollY + "px";
+        tooltipEl.style.left = rect.left + (rect.width - tooltipEl.offsetWidth) / 2 + "px";
         tooltipEl.style.zIndex = "9999";
         tooltipEl.style.opacity = "0";
         tooltipEl.style.transition = "opacity 0.2s ease";
         tooltipEl.style.pointerEvents = "none";
 
-        // Force reflow then fade in
         tooltipEl.offsetHeight;
         tooltipEl.style.opacity = "1";
       }
