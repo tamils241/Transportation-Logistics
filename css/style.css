@@ -8,6 +8,7 @@
    CSS Variables / Design Tokens
    ---------------------------------------- */
 :root {
+    color-scheme: light;
     /* Colors */
     --primary: #F59E0B;
     --primary-dark: #D97706;

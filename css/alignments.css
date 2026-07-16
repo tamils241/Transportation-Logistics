@@ -113,28 +113,7 @@
     color: #F59E0B;
 }
 
-.dark-mode-toggle {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: none;
-    background: rgba(255, 255, 255, 0.1);
-    color: #FFFFFF;
-    font-size: 14px;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
 
-.dark-mode-toggle:hover {
-    background: #F59E0B;
-}
-
-.dark-mode-toggle .fa-sun { display: none; }
-body.dark-mode .dark-mode-toggle .fa-moon { display: none; }
-body.dark-mode .dark-mode-toggle .fa-sun { display: inline; }
 
 /* ----------------------------------------
    2. MAIN HEADER / NAVBAR
@@ -5498,126 +5477,7 @@ body.dark-mode .dark-mode-toggle .fa-sun { display: inline; }
     font-size: 16px;
 }
 
-/* ----------------------------------------
-   38. DARK MODE OVERRIDES
-   ---------------------------------------- */
-body.dark-mode {
-    background-color: #1A1A2E;
-    color: #E0E0E0;
-}
-body.dark-mode .main-header {
-    background: #16213E;
-}
-body.dark-mode .nav-link {
-    color: #E0E0E0;
-}
-body.dark-mode .nav-link:hover {
-    color: #F59E0B;
-}
-body.dark-mode .mega-menu,
-body.dark-mode .dropdown,
-body.dark-mode .dropdown-menu {
-    background: #16213E;
-    border-color: #2A2A4A;
-}
-body.dark-mode .mega-link,
-body.dark-mode .dropdown-link,
-body.dark-mode .dropdown-menu li a {
-    color: #E0E0E0;
-}
-body.dark-mode .mega-link:hover,
-body.dark-mode .dropdown-link:hover,
-body.dark-mode .dropdown-menu li a:hover {
-    background: rgba(245, 158, 11,0.1);
-    color: #F59E0B;
-}
-body.dark-mode .search-toggle {
-    background: rgba(255,255,255,0.08);
-    color: #E0E0E0;
-}
-body.dark-mode .service-card,
-body.dark-mode .feature-card,
-body.dark-mode .pricing-card,
-body.dark-mode .testimonial-card,
-body.dark-mode .blog-card,
-body.dark-mode .team-card,
-body.dark-mode .fleet-card,
-body.dark-mode .industry-card,
-body.dark-mode .location-card,
-body.dark-mode .value-card,
-body.dark-mode .tech-card,
-body.dark-mode .faq-item,
-body.dark-mode .safety-feature {
-    background: #16213E;
-    border-color: #2A2A4A;
-}
-body.dark-mode .service-card h3,
-body.dark-mode .feature-card h3,
-body.dark-mode .pricing-name,
-body.dark-mode .blog-title,
-body.dark-mode .team-info h3,
-body.dark-mode .industry-card h3,
-body.dark-mode .location-card h3,
-body.dark-mode .value-card h3,
-body.dark-mode .tech-card h3,
-body.dark-mode .faq-question,
-body.dark-mode .process-content h3 {
-    color: #FFFFFF;
-}
-body.dark-mode .service-card p,
-body.dark-mode .feature-card p,
-body.dark-mode .testimonial-text,
-body.dark-mode .blog-excerpt,
-body.dark-mode .industry-card p,
-body.dark-mode .location-card p,
-body.dark-mode .value-card p,
-body.dark-mode .tech-card p,
-body.dark-mode .process-content p,
-body.dark-mode .faq-answer-content {
-    color: #B0B0C0;
-}
-body.dark-mode .section-title {
-    color: #FFFFFF;
-}
-body.dark-mode .section-subtitle {
-    color: #B0B0C0;
-}
-body.dark-mode .footer {
-    background: #0F0F23;
-}
-body.dark-mode .mobile-menu {
-    background: #16213E;
-}
-body.dark-mode .mobile-nav a {
-    color: #E0E0E0;
-    border-bottom-color: #2A2A4A;
-}
-body.dark-mode .counter-item, body.dark-mode .stat-item {
-    color: #E0E0E0;
-}
-body.dark-mode .about-section,
-body.dark-mode .features-section,
-body.dark-mode .why-choose-section,
-body.dark-mode .safety-section,
-body.dark-mode .sustainability-section,
-body.dark-mode .team-section,
-body.dark-mode .faq-section,
-body.dark-mode .featured-service {
-    background: #1A1A2E;
-}
-body.dark-mode .services-section,
-body.dark-mode .process-section,
-body.dark-mode .pricing-section,
-body.dark-mode .blog-section,
-body.dark-mode .fleet-section,
-body.dark-mode .locations-section,
-body.dark-mode .network-section,
-body.dark-mode .tech-section {
-    background: #12121F;
-}
-body.dark-mode .process-number {
-    box-shadow: 0 10px 30px rgba(245, 158, 11,0.2);
-}
+
 
 /* ----------------------------------------
    39. RESPONSIVE BREAKPOINTS

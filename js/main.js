@@ -15,6 +15,7 @@
   document.addEventListener("DOMContentLoaded", init);
 
   function init() {
+    localStorage.removeItem("stackly-theme");
     pageLoader();
     stickyHeader();
     mobileNavigation();
