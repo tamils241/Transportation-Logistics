@@ -165,21 +165,21 @@
 
 .main-header .logo-icon,
 .navbar .logo-icon {
-    width: 42px;
-    height: 42px;
+    width: 56px;
+    height: 56px;
     background: linear-gradient(135deg, #F59E0B, #D97706);
-    border-radius: 8px;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 56px;
 }
 
 .main-header .logo-text,
 .navbar .logo-text {
     font-family: 'Poppins', sans-serif;
-    font-size: 24px;
+    font-size: 50px;
     font-weight: 700;
     color: #0F172A;
 }
@@ -5222,24 +5222,24 @@
     text-decoration: none;
 }
 .footer-logo .logo-img {
-    height: 40px;
+    height: 48px;
     width: auto;
     filter: brightness(0) saturate(100%) invert(40%) sepia(87%) saturate(1175%) hue-rotate(357deg) brightness(101%) contrast(105%);
 }
 .footer-logo-icon {
-    width: 42px;
-    height: 42px;
+    width: 50px;
+    height: 50px;
     background: linear-gradient(135deg, #F59E0B, #D97706);
-    border-radius: 8px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 24px;
 }
 .footer-logo-text {
     font-family: 'Poppins', sans-serif;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 700;
     color: #FFFFFF;
 }
@@ -5672,8 +5672,8 @@
     }
 
     .main-header .logo-img {
-        height: 36px;
-        max-width: 180px;
+        height: 42px;
+        max-width: 200px;
     }
 
     .main-header .hamburger {
@@ -5810,8 +5810,8 @@
 
 @media (max-width: 480px) {
     .main-header .logo-img {
-        height: 32px;
-        max-width: 155px;
+        height: 36px;
+        max-width: 180px;
     }
 
     .main-header .nav-menu {
@@ -8143,7 +8143,7 @@
 
 .footer-modern .footer-logo .logo-img {
     width: auto;
-    height: 50px;
+    height: 48px;
 }
 
 .footer-modern .footer-desc {
@@ -8463,8 +8463,8 @@ body > .top-bar {
 
     .main-header .logo-img {
         width: auto !important;
-        height: 38px !important;
-        max-width: 155px !important;
+        height: 56px !important;
+        max-width: 200px !important;
     }
 
     .main-header .nav-menu {

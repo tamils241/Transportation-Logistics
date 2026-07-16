@@ -559,14 +559,14 @@ p {
 }
 
 .logo-img {
-    height: 40px;
+    height: 56px;
     width: auto;
     filter: brightness(0) saturate(100%) invert(40%) sepia(87%) saturate(1175%) hue-rotate(357deg) brightness(101%) contrast(105%);
 }
 
 .logo-icon {
-    width: 42px;
-    height: 42px;
+    width: 56px;
+    height: 56px;
     background: var(--gradient-primary);
     border-radius: var(--radius-md);
     display: flex;
@@ -1200,7 +1200,7 @@ p {
    Statistics Section
    ---------------------------------------- */
 .stats-section {
-    background: #F8F9FA;
+    background: #000000;
     padding: 80px 0;
     position: relative;
     overflow: hidden;
@@ -2146,6 +2146,8 @@ p {
 .breadcrumb-content {
     position: relative;
     z-index: 3;
+    width: 100%;
+    margin-bottom: 12px;
 }
 
 /* Breadcrumb Hero Images */
@@ -2178,7 +2180,7 @@ p {
 }
 
 .breadcrumb-content h1 {
-    color: #F59E0B;
+    color: #FFFFFF;
     font-size: var(--fs-4xl);
     margin-bottom: 15px;
 }
@@ -2191,24 +2193,24 @@ p {
 }
 
 .breadcrumb a {
-    color: rgba(255,255,255,0.9);
+    color: #F59E0B;
     text-decoration: none;
-    text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+    text-shadow: 0 2px 8px rgba(0,0,0,0.8);
     transition: var(--transition-base);
 }
 
 .breadcrumb a:hover {
-    color: var(--primary);
+    color: #FFFFFF;
 }
 
 .breadcrumb span {
     color: #F59E0B;
-    text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+    text-shadow: 0 2px 8px rgba(0,0,0,0.8);
 }
 
 .breadcrumb .current {
-    color: #FFFFFF;
-    text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+    color: #F59E0B;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.8);
 }
 
 .breadcrumb-sep {

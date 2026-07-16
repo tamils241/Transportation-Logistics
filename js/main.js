@@ -178,6 +178,7 @@
 
   function smoothScrolling() {
     document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+      if (anchor.classList.contains("back-to-top")) return;
       anchor.addEventListener("click", function (e) {
         var targetId = this.getAttribute("href");
         if (targetId === "#" || targetId === "#0") return;

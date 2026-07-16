@@ -110,9 +110,11 @@
 
     /* Form Options Row */
     .auth-form-options { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; }
-    .auth-form .auth-checkbox { display: flex; align-items: center; gap: 8px; cursor: pointer; margin-bottom: 0; }
-    .auth-form .auth-checkbox input[type="checkbox"] { width: 16px; height: 16px; accent-color: #F59E0B; cursor: pointer; flex-shrink: 0; }
+    .auth-form .auth-checkbox { display: flex; align-items: center; gap: 10px; cursor: pointer; margin-bottom: 0; }
+    .auth-form .auth-checkbox input[type="checkbox"] { width: 20px; height: 20px; accent-color: #F59E0B; cursor: pointer; flex-shrink: 0; }
     .auth-form .auth-checkbox span { font-size: 13px; color: #666; }
+    .remember-msg { font-size: 12px; color: #059669; margin-top: 6px; display: none; align-items: center; gap: 5px; }
+    .remember-msg.show { display: flex; }
     .auth-forgot-link { font-size: 13px; color: #F59E0B; text-decoration: none; font-weight: 500; transition: color 0.3s; }
     .auth-forgot-link:hover { color: #D97706; text-decoration: underline; }
 
@@ -301,6 +303,7 @@
             <input type="checkbox" name="remember" id="rememberMe">
             <span>Remember Me</span>
           </label>
+          <div class="remember-msg" id="rememberMsg"><i class="fas fa-check-circle"></i> Credentials saved for next visit.</div>
           <a href="404.html" class="auth-forgot-link">Forgot Password?</a>
         </div>
 
@@ -357,12 +360,17 @@
       }, 3000);
     }
 
-    // Password Show/Hide Toggle
+    // Remember Me Toggle
     var rememberMe = document.getElementById('rememberMe');
+    var rememberMsg = document.getElementById('rememberMsg');
     if (rememberMe) {
       rememberMe.addEventListener('change', function() {
-        if (this.checked) {
-          alert('Your login credentials will be saved for next visit.');
+        if (rememberMsg) {
+          if (this.checked) {
+            rememberMsg.classList.add('show');
+          } else {
+            rememberMsg.classList.remove('show');
+          }
         }
       });
     }
@@ -484,6 +492,11 @@
         }
 
         if (!valid) return;
+
+        if (!rememberMe || !rememberMe.checked) {
+          alert('Please check "Remember Me" to continue.');
+          return;
+        }
 
         var localName = email.split('@')[0];
         try {
