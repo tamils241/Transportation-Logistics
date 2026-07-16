@@ -8406,12 +8406,12 @@ body > .main-header + main {
 
 .footer-section .footer-bottom {
     margin-top: 0 !important;
-    padding: 14px 0 18px !important;
-    border-top: 0 !important;
+    padding: 20px 0 !important;
+    border-top: 1px solid rgba(255,255,255,0.08) !important;
 }
 
 .footer-section .footer-bottom-links {
-    display: none !important;
+    display: flex !important;
 }
 
 /* Mobile dropdown fallback: works even if another script intercepts the tap. */
