@@ -3474,7 +3474,7 @@ body.dark-mode .dark-mode-toggle .fa-sun { display: inline; }
 }
 .fleet-specs li {
     font-size: 14px;
-    color: rgba(255,255,255,0.8);
+    color: #1F2937;
     padding: 6px 0;
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
@@ -3482,7 +3482,7 @@ body.dark-mode .dark-mode-toggle .fa-sun { display: inline; }
     border-bottom: none;
 }
 .fleet-specs li strong {
-    color: #FFFFFF;
+    color: #111827;
 }
 .fleet-info {
     padding: 25px;
